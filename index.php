@@ -9,14 +9,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
 
   <title>700VALIENTES</title>
-  <link rel="stylesheet" href="css/styleind.css">
-  <link rel="stylesheet" href="css/styleind.css">
+  <link rel="stylesheet" href="./css/styleind.css">
+  <link rel="stylesheet" href="./css/styleind.css">
 </head>
 
 <body>
 
   <?php
-  include_once 'modulos/nav.php';
+  include_once './modulos/nav.php';
   ?>
 
   <div class="hero-image">
@@ -62,7 +62,7 @@
 
   <?php
 
-  include 'modulos/footer.php';
+  include './modulos/footer.php';
   ?>
 
 </body>

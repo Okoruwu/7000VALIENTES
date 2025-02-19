@@ -16,7 +16,7 @@
 
    <?php
 
-   include 'modulos/nav.php';
+   include './modulos/nav.php';
    ?>
 
    <div class="">
@@ -25,7 +25,7 @@
 
    <?php
 
-   include 'modulos/footer.php';
+   include './modulos/footer.php';
    ?>
 
 </body>

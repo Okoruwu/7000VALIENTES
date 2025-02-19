@@ -7,8 +7,8 @@
   <title>Navbar</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/stylenav.css">
-  <link rel="stylesheet" href="css/stylefon.css">
+  <link rel="stylesheet" href="./css/stylenav.css">
+  <link rel="stylesheet" href="./css/stylefon.css">
 
 </head>
 
@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="../resources/logo.png" alt="" width="300" height="80" />
+        <img src="./resources/logo.png" alt="" width="300" height="80" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,18 +29,18 @@
             <a class="nav-link active" aria-current="page" href="../vista/index.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../vista/quienessomos.php">¿Quiénes Somos?</a>
+            <a class="nav-link" href="./vista/quienessomos.php">¿Quiénes Somos?</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Eventos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href=".././vista/areaNegocios.php">Calendario</a></li>
+              <li><a class="dropdown-item" href="./vista/areaNegocios.php">Calendario</a></li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              <li><a class="dropdown-item" href=".././vista/espectaculos.php">Próximos</a></li>
+              <li><a class="dropdown-item" href="./vista/espectaculos.php">Próximos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -48,11 +48,11 @@
               Incripciones
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href=".././vista/comment.php">Módulos</a></li>
+              <li><a class="dropdown-item" href="./vista/comment.php">Módulos</a></li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              <li><a class="dropdown-item" href=".././vista/prensa.php">Documentos</a></li>
+              <li><a class="dropdown-item" href="./vista/prensa.php">Documentos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -71,7 +71,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="login.php">Iniciar sesión
-              <img src="../resources/user.png" width="20" height="20" class="me-1">
+              <img src="./resources/user.png" width="20" height="20" class="me-1">
             </a>
           </li>
         </ul>

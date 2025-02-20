@@ -5,7 +5,12 @@ function scrollToCardback() {
     }
   }
 
-
+  function scrollToHeroImage() {
+    var elemento = document.querySelector('.hero-image');
+    if (elemento) {
+        elemento.scrollIntoView({ behavior: 'smooth' });
+    }
+}
   window.onload = function() {
    
     setTimeout(function() {

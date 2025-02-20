@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/login.css">   
 
-    <link rel="stylesheet" href="./css/stlog.css">
+   <title>Iniciar sesión</title>
+  
 
-    <title>Iniciar Sesión</title>
 </head>
+
 <body>
 
 <p class="tip"></p>
 <div class="cont">
+
+<div class="container">
+        <img src="../resources/nubes.png" alt="nube" class="imagen">
+    </div>
+
   <div class="form sign-in">
     <h2>¡Hola! Bienvenido De Nuevo</h2>
+    <h5> El señor te protegerá, de todo mal
+    protegerá tu vida.</h5>
  
     <label>
       <span>Correo</span>
@@ -58,9 +68,10 @@
     </div>
   </div>
 </div>
-    
+
+
 </body>
 
-<script src="js/log.js"></script>
+<script src="../js/log.js"></script>
 
 </html>

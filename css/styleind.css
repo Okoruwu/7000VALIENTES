@@ -15,11 +15,12 @@ h1 {
   color: #ffffff;
 }
 .text-overlay {
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  height: 40vh;
+  height: 70vh;
   width: 100%;
   color: white;
   opacity: 0;
@@ -29,7 +30,7 @@ h1 {
 }
 
 .text-overlay h1 {
-  font-family: Brush Script MT;
+  font-family: Montserrat, sans-serif;
 
   font-size: 4vw;
   margin: 0;

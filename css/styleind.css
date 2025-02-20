@@ -29,6 +29,8 @@ h1 {
 }
 
 .text-overlay h1 {
+  font-family: Brush Script MT, cursive;
+
   font-size: 4vw;
   margin: 0;
   text-align: right;

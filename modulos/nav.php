@@ -28,9 +28,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../vista/index.php">Inicio</a>
-          </li>
+
+          <a class="nav-link" href="javascript:void(0);" onclick="scrollToHeroImage()">Inicio</a>
           <a class="nav-link" href="javascript:void(0);" onclick="scrollToCardback()">¿Quiénes Somos?</a>
 
           <li class="nav-item dropdown">
@@ -72,7 +71,7 @@
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Iniciar sesión
+            <a class="nav-link" href="./vista/login.php">Iniciar sesión
               <img src="./resources/user.png" width="20" height="20" class="me-1">
             </a>
           </li>

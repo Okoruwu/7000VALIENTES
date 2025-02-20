@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/stylefon.css">
   <link rel="stylesheet" href="./css/stylenav.css">
   <link rel="stylesheet" href="./css/load.css">
+  <link rel="stylesheet" href="./css/styleform.css">
 
 </head>
 

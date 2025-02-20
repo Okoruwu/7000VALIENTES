@@ -70,6 +70,8 @@
 
 
   <script src="./js/load.js"></script>
+  <script src="./js/scroll.js"></script>
+
 
   <?php
   include_once './modulos/nav.php';

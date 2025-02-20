@@ -31,9 +31,8 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../vista/index.php">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./vista/quienessomos.php">¿Quiénes Somos?</a>
-          </li>
+          <a class="nav-link" href="javascript:void(0);" onclick="scrollToCardback()">¿Quiénes Somos?</a>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Eventos

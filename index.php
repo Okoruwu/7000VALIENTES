@@ -76,7 +76,7 @@
 <div class="testimonio-form">
 
 <p class="p-white"> Contemos las historias que inspiren a otras personas seguir creyendo por su milagro.
-    Tu testimonio las pueden llenar de fe, compartelo.</p>
+    Tu testimonio las pueden llenar de fe, compartelo</p>
 
  <p class="p-white"> Si has recibido un milagro en cualquier, area de tu vida</p> <p class="p-orange">¡Nosotros lo compartiremos para que juntos
   demos testimonio de nuestro padre bueno y misericordioso!</p>   

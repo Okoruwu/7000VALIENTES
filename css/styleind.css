@@ -19,7 +19,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  height: 70vh;
+  height: 40vh;
   width: 100%;
   color: white;
   opacity: 0;
@@ -29,7 +29,7 @@ h1 {
 }
 
 .text-overlay h1 {
-  font-family: Brush Script MT, cursive;
+  font-family: Brush Script MT;
 
   font-size: 4vw;
   margin: 0;

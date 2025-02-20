@@ -71,7 +71,7 @@
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Iniciar sesión
+            <a class="nav-link" href="./vista/login.php">Iniciar sesión
               <img src="./resources/user.png" width="20" height="20" class="me-1">
             </a>
           </li>

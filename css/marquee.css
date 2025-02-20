@@ -1,0 +1,32 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.marquee-container {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #091854;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #2abebc;
+}
+.marquee {
+    white-space: nowrap;
+    font-size: 18px;
+    animation: scroll 10s linear infinite;
+}
+
+/* Efecto de desplazamiento */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

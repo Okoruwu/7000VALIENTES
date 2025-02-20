@@ -10,19 +10,27 @@
 
   <title>700VALIENTES</title>
   <link rel="stylesheet" href="./css/styleind.css">
-  <link rel="stylesheet" href="./css/styleind.css">
+  <link rel="stylesheet" href="./css/stylefon.css">
+  <link rel="stylesheet" href="./css/stylenav.css">
+  <link rel="stylesheet" href="./css/load.css">
+
 </head>
 
 <body>
 
+  <!-- Pantalla de Cargando -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
   <?php
   include_once './modulos/nav.php';
   ?>
 
   <div class="hero-image">
     <div class="text-overlay">
-      <h1>DONDE DIOS TRANSFORMA</h1>
-      <h1 style="text-align: center;">VIDAS</h1>
+      <h1>Donde dios transforma</h1>
+
+      <h1>Vidas</h1>
     </div>
   </div>
 
@@ -60,7 +68,11 @@
     </div>
   </div>
 
+
+  <script src="./js/load.js"></script>
+
   <?php
+  include_once './modulos/nav.php';
 
   include './modulos/footer.php';
   ?>

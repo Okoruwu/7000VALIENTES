@@ -73,19 +73,13 @@
   </div>
 
   <div class="cardback">
-
     <h3>Escribe tu testimonio</h3>
-
     <div class="testimonio-form">
+      <p class="p-white">Contemos las historias que inspiren a otras personas seguir creyendo por su milagro.</p>
+      <p class="p-orange">¡Nosotros lo compartiremos para que juntos demos testimonio de nuestro padre bueno y
+        misericordioso!</p>
 
-      <p class="p-white"> Contemos las historias que inspiren a otras personas seguir creyendo por su milagro.
-        Tu testimonio las pueden llenar de fe, compartelo</p>
-
-      <p class="p-white"> Si has recibido un milagro en cualquier, area de tu vida</p>
-      <p class="p-orange">¡Nosotros lo compartiremos para que juntos
-        demos testimonio de nuestro padre bueno y misericordioso!</p>
-
-      <form>
+      <form action="./bd/testimonio.php" method="POST">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -95,7 +89,7 @@
         <label for="ciudad">Ciudad</label>
         <input type="text" id="ciudad" name="ciudad" required>
 
-        <label for="ciudad">País</label>
+        <label for="pais">País</label>
         <input type="text" id="pais" name="pais" required>
 
         <label for="testimonio">Escribe tu testimonio</label>
@@ -106,8 +100,8 @@
         </div>
       </form>
     </div>
-
   </div>
+
 
 
   <script src="./js/load.js"></script>

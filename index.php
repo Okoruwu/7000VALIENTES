@@ -36,6 +36,9 @@
     </div>
   </div>
 
+  <div class="con-curve">
+        <img src="../resources/curva.png" alt="curva" class="img-curve">
+    </div>
 
 
   <div class="cardback">

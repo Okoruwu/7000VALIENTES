@@ -3,99 +3,115 @@
 
 <head>
 
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../css/stlog.css">   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/stlog.css">
 
-   <title>Iniciar sesión</title>
-  
+  <title>Iniciar sesión</title>
+
 </head>
 
 <body>
 
-<div class="back">
+  <div class="back">
 
-<p class="tip"></p>
-<div class="cont">
+    <p class="tip"></p>
+    <div class="cont">
 
-<div class="con-lin">
+      <div class="con-lin">
         <img src="../resources/lineas.png" alt="nube" class="img-line">
-    </div>
+      </div>
 
-    <div class="con-grec">
+      <div class="con-grec">
         <img src="../resources/Greca.png" alt="nube" class="img-grec">
-    </div>    
+      </div>
 
-<div class="container">
+      <div class="container">
         <img src="../resources/nubes.png" alt="nube" class="imagen">
-    </div>
+      </div>
 
-  <div class="form sign-in">
-    <h2>¡Hola! Bienvenido De Nuevo</h2>
-    <h5> El señor te protegerá, de todo mal
-    protegerá tu vida.</h5>
- 
-    <label>
-      <span>Correo</span>
-      <input type="email" />
-    </label>
-    <label>
-      <span>Contraseña</span>
-      <input type="password" />
-    </label>
-    <button type="button" class="submit">Ingresar</button>
+      <div class="form sign-in">
+        <h2>¡Hola! Bienvenido De Nuevo</h2>
+        <h5> El señor te protegerá, de todo mal
+          protegerá tu vida.</h5>
 
-</div>
-    <div class="sub-cont">
+        <form action="../bd/auth.php" method="POST">
+          <label>
+            <span>Correo</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Contraseña</span>
+            <input type="password" name="password" required />
+          </label>
+          <button type="submit" class="submit">Ingresar</button>
 
-    <div class="con-greclef">
-        <img src="../resources/Greca.png" alt="greca" class="img-greclef">
-    </div>  
+          <?php
+          // depuración 
+          // session_start();
+          // if (isset($_SESSION['error'])) {
+          //   echo "<script>console.error('PHP Error: " . addslashes($_SESSION['error']) . "');</script>";
+          //   unset($_SESSION['error']);
+          // }
+          
+          // if (isset($_SESSION['success'])) {
+          //   echo "<script>console.log('PHP Success: " . addslashes($_SESSION['success']) . "');</script>";
+          //   unset($_SESSION['success']);
+          // }
+          ?>
 
-    <div class="con-linrig">
-        <img src="../resources/lineas.png" alt="greca" class="img-linerig">
-    </div>
+        </form>
+      </div>
+      <div class="sub-cont">
 
-      <div class="img">
-
-        <div class="img__text m--in">
-          <h2>¿No puedes ingresar?</h2>
-          <p>Contacta a soporté para dar notificación sobre tu caso</p>
+        <div class="con-greclef">
+          <img src="../resources/Greca.png" alt="greca" class="img-greclef">
         </div>
 
-        
-        <div class="img__text m--sup">
-        <img src="../resources/logo.png" alt="logo" class="imagen">
+        <div class="con-linrig">
+          <img src="../resources/lineas.png" alt="greca" class="img-linerig">
         </div>
 
-        <div class="img__btn">
-        <span class="m--up">¿Olvidaste algo?</span>
-          <span class="m--in">Iniciar Sesión</span>
+        <div class="img">
+
+          <div class="img__text m--in">
+            <h2>¿No puedes ingresar?</h2>
+            <p>Contacta a soporté para dar notificación sobre tu caso</p>
+          </div>
+
+
+          <div class="img__text m--sup">
+            <img src="../resources/logo.png" alt="logo" class="imagen">
+          </div>
+
+          <div class="img__btn">
+            <span class="m--up">¿Olvidaste algo?</span>
+            <span class="m--in">Iniciar Sesión</span>
+          </div>
+        </div>
+        <div class="form sign-up">
+          <h2>Ingresa lo siguiente</h2>
+          <label>
+            <span>Correo</span>
+            <input type="email" />
+          </label>
+          <label>
+            <span>Nombre</span>
+            <input type="text" />
+          </label>
+          <label>
+            <span>Motivo</span>
+            <input type="text" />
+          </label>
+          <button type="button" class="submit">Enviar</button>
+
         </div>
       </div>
-      <div class="form sign-up">
-        <h2>Ingresa lo siguiente</h2>
-        <label>
-          <span>Correo</span>
-          <input type="email" />
-        </label>
-        <label>
-          <span>Nombre</span>
-          <input type="text" />
-        </label>
-        <label>
-          <span>Motivo</span>
-          <input type="text" />
-        </label>
-        <button type="button" class="submit">Enviar</button>
-
-      </div>
     </div>
+
   </div>
 
-</div>
-
-</div>
+  </div>
 
 </body>
 

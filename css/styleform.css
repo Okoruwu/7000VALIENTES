@@ -1,5 +1,6 @@
 .testimonio-form {
-    background-color: #091854;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -21,7 +22,7 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 2px solid #cf7031;
     border-radius: 4px;
     font-size: 16px;
 }
@@ -45,27 +46,16 @@
     background-color: #cf7031;
 }
 
-@media (max-width: 600px) {
-    .testimonio-form {
-        padding: 15px;
-    }
-
-    .testimonio-form h2 {
-        font-size: 20px;
-    }
-
-    .testimonio-form input[type="text"],
-    .testimonio-form input[type="email"],
-    .testimonio-form textarea {
-        font-size: 14px;
-    }
-
-    .testimonio-form button {
-        font-size: 14px;
-    }
-}
 
 .p-white{
+    color: white;
+    text-align: center;
+    padding: 7px; 
+    font-weight: bold;
+    margin-top: 33px;
+}
+
+.p-whit{
     color: white;
     text-align: center;
     padding: 7px; 
@@ -90,5 +80,70 @@ h3 {
     font-size: 3.5em;
     color: #ffffff;
     margin-right: 30px;
+    transform: perspective(10px);
+    margin-top: 20px;
   }
   
+  @media (max-width: 600px) {
+    .testimonio-form {
+        padding: 15px;
+    }
+
+    .testimonio-form h2 {
+        font-size: 20px;
+    }
+
+    .testimonio-form input[type="text"],
+    .testimonio-form input[type="email"],
+    .testimonio-form textarea {
+        font-size: 14px;
+    }
+
+    .testimonio-form button {
+        font-size: 14px;
+    }
+    h3{
+        text-align: center;
+        font-size: 3.8em;
+        margin-top: 75px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    h3{
+        text-align: center;
+        font-size: 3.8em;
+        margin-top: 75px;
+        
+    }
+     }
+
+     @media (max-width: 480px) {
+        h3{
+            text-align: center;
+            font-size: 3.8em;
+            margin-top: 75px;
+            
+        }
+      
+    }
+    
+    @media (max-width: 400px) {
+        h3{
+            text-align: center;
+            font-size: 3.8em;
+            margin-top: 75px;
+            
+        }
+    }
+    
+
+    @media (max-width: 1400px) {
+        h3{
+            text-align: center;
+            font-size: 3.3em;
+            margin-top: 80px;
+        }
+            
+       }

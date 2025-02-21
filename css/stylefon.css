@@ -1,3 +1,49 @@
 .cardback{
-    background: url("../resources/backin.webp") center/cover no-repeat;
+    background-color: #091854;
 }
+
+.con-curve{
+    position: absolute;
+    align-content: center;
+    opacity: 100%;
+    scale: -1;
+    transform: scaleX(1.3);
+    overflow: hidden;
+  }
+  
+  .img-curve{
+    width: 100%; 
+    height: auto;
+  }
+
+  
+  @media (max-width: 768px) {
+    .con-curve {
+        transform: scaleX(1.1); 
+    }
+     }
+
+     @media (max-width: 480px) {
+      .con-curve {
+          transform: scaleX(1); 
+        }
+
+      .img-curve{
+          width: 41vh;
+          }
+      
+    }
+    
+    @media (max-width: 400px) {
+      .con-curve {
+          transform: scaleX(1); 
+      }
+    }
+    
+
+    @media (max-width: 1400px) {
+      .con-curve {
+          transform: scaleX(1.2); 
+      }
+       }
+  

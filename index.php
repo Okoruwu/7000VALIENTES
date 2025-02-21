@@ -36,12 +36,12 @@
   </div>
 
   <div class="con-curve">
-        <img src="./resources/curva.png" alt="curva" class="img-curve">
-    </div>
+    <img src="./resources/curva.png" alt="curva" class="img-curve">
+  </div>
 
   <div class="cardback">
 
-  <h3>¿Quiénes somos?</h3>
+    <h3>¿Quiénes somos?</h3>
 
     <div class="container">
       <div class="box">
@@ -73,45 +73,46 @@
     </div>
   </div>
 
-    <div class="con-curve">
-        <img src="./resources/curva.png" alt="curva" class="img-curve">
-    </div>
+  <div class="con-curve">
+    <img src="./resources/curva.png" alt="curva" class="img-curve">
+  </div>
 
   <div class="cardback">
 
-<h3>Escribe tu testimonio</h3>
+    <h3>Escribe tu testimonio</h3>
 
-<div class="testimonio-form">
+    <div class="testimonio-form">
 
-<p class="p-white"> Contemos las historias que inspiren a otras personas seguir creyendo por su milagro.
-    Tu testimonio las pueden llenar de fe, compartelo.</p>
+      <p class="p-white"> Contemos las historias que inspiren a otras personas seguir creyendo por su milagro.
+        Tu testimonio las pueden llenar de fe, compartelo.</p>
 
- <p class="p-whit"> Si has recibido un milagro en cualquier, area de tu vida</p> <p class="p-orange">¡Nosotros lo compartiremos para que juntos
-  demos testimonio de nuestro padre bueno y misericordioso!</p>   
+      <p class="p-whit"> Si has recibido un milagro en cualquier, area de tu vida</p>
+      <p class="p-orange">¡Nosotros lo compartiremos para que juntos
+        demos testimonio de nuestro padre bueno y misericordioso!</p>
 
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
+      <form action="./bd/testimonio.php" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="ciudad">Ciudad</label>
-            <input type="text" id="ciudad" name="ciudad" required>
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad" name="ciudad" required>
 
-            <label for="ciudad">País</label>
-            <input type="text" id="pais" name="pais" required>            
+        <label for="pais">País</label>
+        <input type="text" id="pais" name="pais" required>
 
-            <label for="testimonio">Escribe tu testimonio</label>
-            <textarea id="testimonio" name="testimonio" required></textarea>
+        <label for="testimonio">Escribe tu testimonio</label>
+        <textarea id="testimonio" name="testimonio" required></textarea>
 
-            <div class="btn-send">
-            <button type="submit">Enviar Testimonio</button>
-            </div>
-        </form>
+        <div class="btn-send">
+          <button type="submit">Enviar Testimonio</button>
+        </div>
+      </form>
     </div>
 
-</div>
+  </div>
 
   <script src="./js/load.js"></script>
 

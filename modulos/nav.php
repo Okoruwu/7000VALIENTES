@@ -1,3 +1,10 @@
+<?php
+
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +18,6 @@
   <link rel="stylesheet" href="./css/stylefon.css">
 
 </head>
-
 
 <body>
 
@@ -62,18 +68,42 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="https://www.facebook.com"> <i class="bi bi-facebook"></i> Facebook </a>
-
               </li>
               <li><a class="dropdown-item" href="https://www.instagram.com"> <i class="bi bi-instagram"></i>
                   Instagram</a></li>
             </ul>
           </li>
         </ul>
+
+
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./vista/login.php">Iniciar sesión
-              <img src="./resources/user.png" width="20" height="20" class="me-1">
-            </a>
+            <?php
+            if (isset($_SESSION['user_name'])) {
+
+              $dashboardLink = '';
+
+
+              switch ($_SESSION['user_role']) {
+                case 'admin':
+                  $dashboardLink = 'dashboard/admin.php';
+                  break;
+                case 'editor':
+                  $dashboardLink = 'dashboard/editor.php';
+                  break;
+                case 'usuario':
+                  $dashboardLink = 'dashboard/user.php';
+                  break;
+                default:
+                  $dashboardLink = '#';
+                  break;
+              }
+
+              echo '<a class="nav-link" href="' . $dashboardLink . '">' . $_SESSION['user_name'] . '</a>';
+            } else {
+              echo '<a class="nav-link" href="./vista/login.php">Iniciar sesión <img src="./resources/user.png" width="20" height="20" class="me-1"></a>';
+            }
+            ?>
           </li>
         </ul>
       </div>

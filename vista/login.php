@@ -13,38 +13,39 @@
 
 <body>
 
-  <div class="back">
+<div class="cardback">
 
-    <p class="tip"></p>
-    <div class="cont">
+<div class="login-form">
 
-      <div class="con-lin">
-        <img src="../resources/lineas.png" alt="nube" class="img-line">
-      </div>
+<div class="conlog-img"> </div>
 
-      <div class="con-grec">
-        <img src="../resources/Greca.png" alt="nube" class="img-grec">
-      </div>
+<div class="con-curve">
+        <img src="../resources/curva.png" alt="curva" class="img-curve">
+</div>
 
-      <div class="container">
-        <img src="../resources/nubes.png" alt="nube" class="imagen">
-      </div>
+<p class="p-white">EL SEÑOR TE PROTEGERÁ,</p>
+<p class="p-white">DE TODO MAL, PROTEGERA TU VIDA.</p>
 
-      <div class="form sign-in">
-        <h2>¡Hola! Bienvenido De Nuevo</h2>
-        <h5> El señor te protegerá, de todo mal
-          protegerá tu vida.</h5>
+<div class="con-nub">
+        <img src="../resources/nubes.png" alt="nube" class="img-nub">
+</div>
 
-        <form action="../bd/auth.php" method="POST">
-          <label>
-            <span>Correo</span>
-            <input type="email" name="email" required />
-          </label>
-          <label>
-            <span>Contraseña</span>
-            <input type="password" name="password" required />
-          </label>
-          <button type="submit" class="submit">Ingresar</button>
+<h1>Bienvenidos</h1>
+
+  <form action="./bd/testimonio.php" method="POST">
+
+    <input type="text" id="user" name="user" placeholder="Usuario" required>
+
+    <input type="email" id="email" name="email" placeholder="Contraseña" required>
+
+    <div class="btn-send">
+      <button type="submit">Iniciar Sesión</button>
+    </div>
+
+    </form>
+</div>
+
+</div>    
 
           <?php
           // depuración 
@@ -60,58 +61,6 @@
           // }
           ?>
 
-        </form>
-      </div>
-      <div class="sub-cont">
-
-        <div class="con-greclef">
-          <img src="../resources/Greca.png" alt="greca" class="img-greclef">
-        </div>
-
-        <div class="con-linrig">
-          <img src="../resources/lineas.png" alt="greca" class="img-linerig">
-        </div>
-
-        <div class="img">
-
-          <div class="img__text m--in">
-            <h2>¿No puedes ingresar?</h2>
-            <p>Contacta a soporté para dar notificación sobre tu caso</p>
-          </div>
-
-
-          <div class="img__text m--sup">
-            <img src="../resources/logo.png" alt="logo" class="imagen">
-          </div>
-
-          <div class="img__btn">
-            <span class="m--up">¿Olvidaste algo?</span>
-            <span class="m--in">Iniciar Sesión</span>
-          </div>
-        </div>
-        <div class="form sign-up">
-          <h2>Ingresa lo siguiente</h2>
-          <label>
-            <span>Correo</span>
-            <input type="email" />
-          </label>
-          <label>
-            <span>Nombre</span>
-            <input type="text" />
-          </label>
-          <label>
-            <span>Motivo</span>
-            <input type="text" />
-          </label>
-          <button type="button" class="submit">Enviar</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  </div>
 
 </body>
 

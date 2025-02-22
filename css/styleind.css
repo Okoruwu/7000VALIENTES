@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Darkline';
-  src: url('./fonts/Darkline.ttf') format('truetype');
+  font-family: 'Romanica';
+  src: url('../fonts/Romanica.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -8,7 +8,7 @@
 h1 {
   text-align: right;
   line-height: 1.5;
-  font-family: 'Darkline', Arial;
+  font-family: 'Romanica';
   font-size: 2.5em;
   color: #ffffff;
 }
@@ -24,18 +24,19 @@ h1 {
   animation: fadeIn 2s forwards;
   position: relative;
   padding-right: 5vw;
+  margin-top: 15vh;
 }
 
 .text-overlay h1 {
-  font-size: 4vw;
+  font-size: 3vw;
   margin: 0;
   text-align: right;
 }
 
 .text-overlay h2 {
-  font-size: 4vw;
-  margin: 0;
-  text-align: right;
+  font-size: 3vw;
+  margin-right: 28vh;
+  font-family: 'Romanica';
 }
 
 @keyframes fadeIn {
@@ -240,6 +241,7 @@ h1 {
   font-size: 2em;
   color: #fff;
   margin-bottom: 10px;
+  font-family: 'Romanica';
 }
 
 .container .box .content p
@@ -247,6 +249,7 @@ h1 {
   font-size: 1em;
   margin-bottom: 10px;
   line-height: 1.4em;
+  font-family: 'Romanica';
 }
 
 .container .box .content a
@@ -316,8 +319,7 @@ h1 {
     .text-overlay h1 {
       font-size: 7vw;
       margin: 0;
-      margin-right: 5vh;
-      margin-top: 7vh;
+      margin-top: -16vh;
 
     }
 

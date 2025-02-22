@@ -29,9 +29,9 @@
 
   <div class="hero-image">
     <div class="text-overlay">
-      <h1>Donde dios transforma</h1>
+      <h1>DONDE DIOS TRANSFORMA</h1>
 
-      <h2>Vidas</h2>
+      <h2>VIDAS</h2>
     </div>
   </div>
 
@@ -47,17 +47,19 @@
       <div class="box">
         <span></span>
         <div class="content">
-          <h2 style="text-align: center;">Misión</h2>
-          <p style="text-align: justify;">Inspirar y tranformar vidas a través de valores y principios.</p>
+          <h2 style="text-align: center;">Visión</h2>
+          <p style="text-align: justify;">"Ser un remanente fiel transformador por Dios,
+            comprometido a llevar el evangelio de Cristo con valentia, impactando nuestra
+            comunidad y más alla de nuestras fronteras con su amor y proposito."</p>
         </div>
       </div>
       <div class="box">
         <span></span>
         <div class="content">
-          <h2 style="text-align: center;">Visión</h2>
-          <p style="text-align: justify;">Establecer una Feria Aeroespacial, de Seguridad y Defensa sustentable, con
-            prestigio y liderazgo en la comunidad aeronáutica mundial,
-            que promueva.</p>
+          <h2 style="text-align: center;">Misión</h2>
+          <p style="text-align: justify;">"Evangelizar, discipular y servir con estrategias
+            creativas, guiando a las personas a ser transformadas
+            en Cristo, a permanecer en la fe y a liderar para la gloria de Dios."</p>
         </div>
       </div>
 
@@ -65,9 +67,9 @@
         <span></span>
         <div class="content">
           <h2 style="text-align: center;">Objetivos</h2>
-          <p style="text-align: justify;">Establecer una Feria Aeroespacial, de Seguridad y Defensa sustentable, con
-            prestigio y liderazgo en la comunidad aeronáutica mundial,
-            que promueva.</p>
+          <p style="text-align: justify;">"Ser un remanente fiel transformador por Dios,
+            comprometido a llevar el evangelio de Cristo con valentia, impactando nuestra
+            comunidad y más alla de nuestras fronteras con su amor y proposito.</p>
         </div>
       </div>
     </div>
@@ -91,20 +93,15 @@
         demos testimonio de nuestro padre bueno y misericordioso!</p>
 
       <form action="./bd/testimonio.php" method="POST">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="Email">
 
-        <label for="ciudad">Ciudad</label>
-        <input type="text" id="ciudad" name="ciudad" required>
+        <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad">
 
-        <label for="pais">País</label>
-        <input type="text" id="pais" name="pais" required>
+        <input type="text" id="pais" name="pais" required placeholder="País">
 
-        <label for="testimonio">Escribe tu testimonio</label>
-        <textarea id="testimonio" name="testimonio" required></textarea>
+        <textarea id="testimonio" name="testimonio" required placeholder="Escribe tu testimonio"></textarea>
 
         <div class="btn-send">
           <button type="submit">Enviar Testimonio</button>

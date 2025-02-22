@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Darkline';
+    src: url('../fonts/Darkline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Romanica';
+    src: url('../fonts/Romanica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .testimonio-form {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -27,6 +41,12 @@
     font-size: 16px;
 }
 
+.testimonio-form input::placeholder
+.testimonio-form textarea {
+    font-size: 14px; 
+    font-family: 'Darkline'; 
+}
+
 .testimonio-form textarea {
     resize: vertical;
     height: 150px;
@@ -50,6 +70,7 @@
 .p-white{
     color: white;
     text-align: center;
+    font-family:'Romanica';
     padding: 7px; 
     font-weight: bold;
     margin-top: 33px;
@@ -58,6 +79,7 @@
 .p-whit{
     color: white;
     text-align: center;
+    font-family:'Romanica';    
     padding: 7px; 
     font-weight: bold;
 }
@@ -65,6 +87,7 @@
 .p-orange{
     color: rgb(255, 109, 56);
     text-align: center;
+    font-family:'Romanica';    
     padding: 8px; 
     font-weight: bold;
 }
@@ -76,7 +99,7 @@
 h3 {
     text-align: right;
     line-height: 2.5;
-    font-family: Brush Script MT, cursive;
+    font-family:'Darkline';
     font-size: 3.5em;
     color: #ffffff;
     margin-right: 30px;

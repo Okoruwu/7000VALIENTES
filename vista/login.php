@@ -36,7 +36,7 @@
 
     <input type="text" id="user" name="user" placeholder="Usuario" required>
 
-    <input type="email" id="email" name="email" placeholder="Contraseña" required>
+    <input type="text" id="pass" name="contfra" placeholder="Contraseña" required>
 
     <div class="btn-send">
       <button type="submit">Iniciar Sesión</button>

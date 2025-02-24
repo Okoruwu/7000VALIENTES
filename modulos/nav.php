@@ -43,7 +43,7 @@ if (session_status() == PHP_SESSION_NONE) {
               Eventos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./vista/areaNegocios.php">Calendario</a></li>
+              <li><a class="dropdown-item" href="./vista/calendario.php">Calendario</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">

@@ -44,10 +44,6 @@ if (session_status() == PHP_SESSION_NONE) {
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="./vista/areaNegocios.php">Calendario</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="./vista/espectaculos.php">Próximos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -56,10 +52,6 @@ if (session_status() == PHP_SESSION_NONE) {
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="./vista/comment.php">Módulos</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="./vista/prensa.php">Documentos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -112,5 +104,6 @@ if (session_status() == PHP_SESSION_NONE) {
 </body>
 
 <script src="js/anim_nav.js"></script>
+<script src="js/scroll.js"></script>
 
 </html>

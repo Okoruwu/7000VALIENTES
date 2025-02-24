@@ -13,17 +13,16 @@
 }
 
 body {
-  background-color: #091854;
+  background-color: #fefefe;
 }
 
 .login-form {
   background-color: #a9d8e1;
   border-radius: 20px;
-  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 950px;
-  max-width: 1176px;
+  width: 900px;
+  height: 680px;
+  max-width: 1500px;
   margin: auto;
 }
 
@@ -39,10 +38,10 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border: 2px solid #cf7031;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 16px;
   margin-left: 5vh;
-  transform: translateY(-33vh);
+  transform: translateY(-48vh);
 }
 
 .login-form input::placeholder {
@@ -55,12 +54,12 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border: 2px solid #cf7031;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 16px;
-  margin-top: 1vh;
+  margin-top: 2vh;
   margin-left: 5vh;
   margin-bottom: 3vh;
-  transform: translateY(-33vh);
+  transform: translateY(-48vh);
 }
 
 .login-form input::placeholder
@@ -96,13 +95,13 @@ body {
   font-family: 'Romanica';
   letter-spacing: 2px;
   font-size: 2.5vh;
-  transform: translateY(-204px);
+  transform: translateY(-260px);
 }
 
 
 .btn-send{
   text-align: center;
-  transform: translateY(-33vh);
+  transform: translateY(-46vh);
 }
 
 h1 {
@@ -110,8 +109,8 @@ h1 {
   font-family: 'Romanica';
   font-size: 3.5em;
   color: #ffffff;
-  letter-spacing: 6px; 
-  transform: translateY(-248px);
+  letter-spacing: 6px;
+  transform: translateY(-355px);
 }
 
 .con-curve {
@@ -119,7 +118,7 @@ h1 {
   align-content: center;
   opacity: 100%;
   overflow: hidden;
-  transform: translateY(-212px);
+  transform: translateY(-200px);
 }
 
 .img-curve {
@@ -133,15 +132,15 @@ h1 {
   opacity: 100%;
   overflow: hidden;
   background: url(../resources/login.jpg) center / cover no-repeat;
-  height: 50vh;
+  height: 35vh;
 }
 
 .con-nub {
   position: relative;
   width: 90px;
   height: 80px;
-  margin-bottom: 8vh;
-  transform: translate(71vh, -220px);
+  margin-bottom: 9vh;
+  transform: translate(53vh, -275px);
 }
 
 .img-nub {
@@ -151,6 +150,54 @@ h1 {
 
 @media (max-width: 600px) {
   .login-form {
+      padding: 15px;
+      transform: translateY(65vh);
+      height: 720px;
+  }
+
+  .login-form h2 {
+      font-size: 20px;
+  }
+
+  .login-form input[type="text"],
+  .login-form input[type="email"],
+  .login-form textarea {
+      font-size: 14px;
+      transform: translateY(-41vh);
+  }
+
+  .login-form button {
+      font-size: 14px;
+  }
+
+.btn-send{
+  transform: translateY(-40vh);  
+}
+
+.con-nub{
+  transform: translate(53vh, -265px);
+}
+
+  h1{
+      text-align: center;
+      font-size: 3.8em;
+      margin-top: 75px;
+      
+  }
+}
+
+@media (max-width: 768px) {
+  h1{
+      text-align: center;
+      font-size: 3.8em;
+      margin-top: 75px;
+      
+  }
+   }
+
+  
+  @media (max-width: 400px) {
+    .login-form {
       padding: 15px;
   }
 
@@ -173,34 +220,6 @@ h1 {
       margin-top: 75px;
       
   }
-}
-
-@media (max-width: 768px) {
-  h1{
-      text-align: center;
-      font-size: 3.8em;
-      margin-top: 75px;
-      
-  }
-   }
-
-   @media (max-width: 480px) {
-      h1{
-          text-align: center;
-          font-size: 3.8em;
-          margin-top: 75px;
-          
-      }
-    
-  }
-  
-  @media (max-width: 400px) {
-      h1{
-          text-align: center;
-          font-size: 3.8em;
-          margin-top: 75px;
-          
-      }
   }
   
 

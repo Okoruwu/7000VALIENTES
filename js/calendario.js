@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     calendar.addEventListener("click", function (e) {
         if (e.target.classList.contains("day")) {
             let selectedDay = e.target.dataset.day;
-            info.innerHTML = `<h3>Información del ${selectedDay}</h3><p>Aquí puedes agregar detalles para este día.</p>`;
+            info.innerHTML = `<h3>Información del ${selectedDay}</h3><p>ejemplo</p>`;
         }
     });
 

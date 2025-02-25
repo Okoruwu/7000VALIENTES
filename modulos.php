@@ -44,6 +44,13 @@
             </button>
         </div>
 
+        <h1> HORARIOS PRINCIPALES </h1>
+
+        <div class="text-horarios">
+            <p class="p-dom">DOMINGOS</p>
+            <p class="p-mir">MIERCOLES</p>
+        </div>
+
         <div class="container">
             <div class="card">
                 <h3>Materia 1</h3>

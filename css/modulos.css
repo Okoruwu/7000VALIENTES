@@ -45,6 +45,48 @@ body {
     padding-top: 10px;    
 }
 
+.text-horarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.p-mir{
+    color: white;
+    font-family: 'Romanica';
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #cf7031;
+    letter-spacing: 3px;
+}
+
+.p-dom{
+    color: white;
+    text-align: center;
+    font-family: 'Romanica';
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #cf7031;
+    letter-spacing: 3px;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Romanica';
+    font-size: 3.5em;
+    color: #ffffff;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    letter-spacing: 6px;
+    margin-bottom: 5vh;
+  }
+
 h3 {
     line-height: 1.5;
     font-family: 'Darkline';
@@ -115,3 +157,4 @@ h3 {
     height: 400px;
     object-fit: cover;
 }
+

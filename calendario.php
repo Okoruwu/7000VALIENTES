@@ -26,10 +26,13 @@ include_once './modulos/nav.php';
     <?php include_once './modulos/nav.php'; ?>
 
     <div class="content">
+    <h1>Eventos del mes</h1>
         <div class="container">
             <div id="calendar"></div>
             <div id="info">
-                <h3>Seleccione un día</h3>
+                <h1>Próximos eventos</h1>
+                <p class="desc">Presiona un dia del calendario 
+                    para conocer si hay un evento próximo! </p>
             </div>
         </div>
     </div>

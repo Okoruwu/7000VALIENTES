@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     calendar.addEventListener("click", function (e) {
+        const imagePath = "https://acortar.link/potzGv";
         if (e.target.classList.contains("day")) {
             let selectedDay = e.target.dataset.day;
-            info.innerHTML = `<h3>Información del ${selectedDay}</h3><p>ejemplo</p>`;
+            info.innerHTML = `${selectedDay} 
+            <img src="${imagePath}" alt="Presentación de imagen">`;
         }
     });
 

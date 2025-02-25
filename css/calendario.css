@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Romanica';
+    src: url('../fonts/Romanica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
     background-color: #fcfcfc;
     color: #2AB7B3;
@@ -19,8 +26,8 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
     max-width: 1200px;
     background-color: white;
     color: black;
@@ -38,6 +45,9 @@ body {
 
 #calendar {
     border: 2px solid #2AB7B3;
+    background: aliceblue;
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 #info {
@@ -61,3 +71,44 @@ td:hover {
     background-color: #2AB7B3;
     color: white;
 }
+
+h1 {
+    text-align: center;
+    font-family: 'Romanica';
+    font-size: 2.5em;
+    color: #0c483e;
+    margin-bottom: 5vh;
+  }
+
+  #info,img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+  }
+
+  .p-white{
+    color: white;
+    text-align: center;
+    font-family: 'Romanica';
+    letter-spacing: 2px;
+    font-size: 1.5vh;
+  }
+
+  @media (max-width: 600px) {
+    #info {
+        width: 95vh;
+    }
+  
+  }
+  
+  @media (max-width: 850px) {
+    #info {
+        width: 122vh;
+    }
+
+    @media (max-width: 700px) {
+        #info {
+            width: 95vh;
+        }    
+     }
+    }

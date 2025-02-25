@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Darkline';
+    src: url('../fonts/Darkline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Romanica';
+    src: url('../fonts/Romanica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
     background-color: #2AB7B3;
     color: white;
@@ -10,8 +24,8 @@ body {
 }
 
 .content {
-    flex: 1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
@@ -19,11 +33,34 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 80%;
     max-width: 1200px;
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    padding-top: 10px;    
+}
+
+h3 {
+    line-height: 1.5;
+    font-family: 'Darkline';
+    font-size: 3.5em;
+    color: #ffffff;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .p{
+    color: white;
+    text-align: center;
+    font-family:'Romanica';    
+    padding: 7px; 
+    font-weight: bold;
 }
 
 .card {

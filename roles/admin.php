@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <section class="content-section" id="users" style="display:none;">
                 <div>
                     <h3>Agregar Usuario</h3>
-                    <form method="POST">
+                    <form method="POST" class="form-user">
                         <label for="username">Nombre de Usuario:</label>
                         <input type="text" id="username" name="username" required>
                         <label for="email">Correo Electrónico:</label>
@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div>
                     <h3>Eliminar Usuario</h3>
-                    <form method="POST">
+                    <form method="POST" class="form-user">
                         <label for="user_id">ID del Usuario:</label>
                         <input type="text" id="user_id" name="user_id" required>
                         <button type="submit" name="delete_user" class="btn-delete">Eliminar Usuario</button>
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <section class="content-section" id="events" style="display:none;">
                 <div>
                     <h3>Agregar Evento</h3>
-                    <form method="POST">
+                    <form method="POST" class="form-event">
                         <label for="event_name">Nombre del Evento:</label>
                         <input type="text" id="event_name" name="event_name" required>
                         <label for="event_description">Descripción:</label>
@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div>
                     <h3>Eliminar Evento</h3>
-                    <form method="POST">
+                    <form method="POST" class="form-event">
                         <label for="event_id">ID del Evento:</label>
                         <input type="text" id="event_id" name="event_id" required>
                         <button type="submit" name="delete_event" class="btn-delete">Eliminar Evento</button>

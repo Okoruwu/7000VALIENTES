@@ -67,7 +67,6 @@ body {
     width: 100%;
     padding: 30px;
     background-color: white;
-    min-height: 100vh;
     flex-grow: 1;
     flex-basis: 200px;
 }
@@ -190,5 +189,75 @@ header {
     transition: background-color 0.3s ease;
   }
   
+  @media (max-width: 400px) {
+    .container{
+
+        display: block;
+    }
+        
+    .sidebar {
+        width: revert;
+    }
+
+    .main-content{
+        position: relative;
+        width: 37vh;
+    }
+
+    .form-user{
+        width: 350px;
+    }
+
+    .form-event{
+        width: 350px;
+    }
+   }
+
+   @media (max-width: 600px) {
+    .container{
+
+        display: block;
+    }
+        
+    .sidebar {
+        width: revert;
+    }
+
+    .main-content{
+        position: relative;
+        width: 37vh;
+    }
+
+    .form-user{
+        width: 350px;
+    }
+    .form-event{
+        width: 350px;
+    }
+   }
+
+   @media (max-width: 480px) {
+    .container{
+
+        display: block;
+    }
+        
+    .sidebar {
+        width: revert;
+    }
+
+    .main-content{
+        position: relative;
+        width: 37vh;
+    }
+
+    .form-user{
+        width: 350px;
+    }
+
+    .form-event{
+        width: 350px;
+    }
+   }
 
   

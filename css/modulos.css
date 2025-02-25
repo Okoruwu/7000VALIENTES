@@ -57,11 +57,13 @@ body {
 .p-mir{
     color: white;
     font-family: 'Romanica';
+    text-align: center;
     padding: 7px;
     font-weight: bold;
     border-radius: 5px;
     background-color: #cf7031;
     letter-spacing: 3px;
+    width: 25vh;
 }
 
 .p-dom{
@@ -73,6 +75,7 @@ body {
     border-radius: 5px;
     background-color: #cf7031;
     letter-spacing: 3px;
+    width: 25vh;
 }
 
 h1 {

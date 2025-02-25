@@ -56,22 +56,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container">
         <nav class="sidebar">
             <div class="sidebar-header">
+            <div class="logo"> 
+            <img src="../resources/logo.png" alt="" width="270" height="75">      
+        </div>
+
                 <h2>Admin Panel</h2>
             </div>
             <ul class="sidebar-menu">
                 <li><a href="javascript:void(0)" onclick="showSection('users')">Usuarios</a></li>
                 <li><a href="javascript:void(0)" onclick="showSection('events')">Eventos</a></li>
+                <li> <a href="">Cerrar Sesión</a></li>                
             </ul>
         </nav>
 
         <div class="main-content">
             <header>
                 <h1>Bienvenido al Panel de Administración</h1>
-                <p>Selecciona una opción del menú para gestionar el contenido.</p>
+                <p class="p-opcion">Selecciona una opción del menú para gestionar el contenido.</p>
             </header>
 
             <section class="content-section" id="users" style="display:none;">
-                <h2>Usuarios</h2>
                 <div>
                     <h3>Agregar Usuario</h3>
                     <form method="POST">
@@ -87,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <option value="editor">Editor</option>
                             <option value="usuario">Usuario</option>
                         </select>
-                        <button type="submit" name="submit_user">Agregar Usuario</button>
+                        <button type="submit" name="submit_user" class="btn-send">Agregar Usuario</button>
                     </form>
                 </div>
                 <div>
@@ -95,13 +99,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form method="POST">
                         <label for="user_id">ID del Usuario:</label>
                         <input type="text" id="user_id" name="user_id" required>
-                        <button type="submit" name="delete_user">Eliminar Usuario</button>
+                        <button type="submit" name="delete_user" class="btn-delete">Eliminar Usuario</button>
                     </form>
                 </div>
             </section>
 
             <section class="content-section" id="events" style="display:none;">
-                <h2>Eventos</h2>
                 <div>
                     <h3>Agregar Evento</h3>
                     <form method="POST">
@@ -111,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <textarea id="event_description" name="event_description" required></textarea>
                         <label for="event_date">Fecha del Evento:</label>
                         <input type="datetime-local" id="event_date" name="event_date" required>
-                        <button type="submit" name="submit_event">Agregar Evento</button>
+                        <button type="submit" name="submit_event" class="btn-send">Agregar Evento</button>
                     </form>
                 </div>
                 <div>
@@ -119,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form method="POST">
                         <label for="event_id">ID del Evento:</label>
                         <input type="text" id="event_id" name="event_id" required>
-                        <button type="submit" name="delete_event">Eliminar Evento</button>
+                        <button type="submit" name="delete_event" class="btn-delete">Eliminar Evento</button>
                     </form>
                 </div>
             </section>

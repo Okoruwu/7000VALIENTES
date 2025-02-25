@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <label for="password">Contraseña:</label>
                         <input type="password" id="password" name="password" required>
                         <label for="rol">Rol:</label>
-                        <select id="rol" name="rol" required>
+                        <select class="roles" id="rol" name="rol" required>
                             <option value="admin">Administrador</option>
                             <option value="editor">Editor</option>
                             <option value="usuario">Usuario</option>
@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <label for="event_description">Descripción:</label>
                         <textarea id="event_description" name="event_description" required></textarea>
                         <label for="event_date">Fecha del Evento:</label>
-                        <input type="datetime-local" id="event_date" name="event_date" required>
+                        <input class="fecha" type="datetime-local" id="event_date" name="event_date" required>
                         <button type="submit" name="submit_event" class="btn-send">Agregar Evento</button>
                     </form>
                 </div>

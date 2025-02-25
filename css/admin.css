@@ -122,6 +122,26 @@ textarea {
     height: 150px;
 }
 
+.roles{
+    font-family: 'Romanica';
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ea7446;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.fecha{
+    font-family: 'Romanica';
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ea7446;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
 h3 {
     margin-top: 0;
     font-family: 'Romanica';

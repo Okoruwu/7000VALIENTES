@@ -1,40 +1,27 @@
 <?php
-//Depuracion de errores
-// if (session_status() == PHP_SESSION_NONE) {
-//     session_start();
-// }
-
 class Database
 {
-    private static $instance = null;
-    private $conn;
+    private $servername = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $dbname = "7000Valientes";
 
-    private $host = "localhost";
-    private $user = "root";
-    private $pass = "";
-    private $dbname = "7000valientes";
+    private static $conn = null;
 
     private function __construct()
     {
-        $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
-        // Depuracion de errores
-
-        // if ($this->conn->connect_error) {
-        //     die("Error de conexión: " . $this->conn->connect_error);
-        // }
-    }
-
-    public static function getInstance()
-    {
-        if (!self::$instance) {
-            self::$instance = new Database();
+        self::$conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        if (self::$conn->connect_error) {
+            die("Conexión fallida: " . self::$conn->connect_error);
         }
-        return self::$instance;
     }
 
-    public function getConnection()
+    public static function getConnection()
     {
-        return $this->conn;
+        if (self::$conn === null) {
+            new Database();
+        }
+        return self::$conn;
     }
 }
 ?>

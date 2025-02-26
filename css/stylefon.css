@@ -27,10 +27,6 @@
       .con-curve {
           transform: scaleX(1); 
         }
-
-      .img-curve{
-          width: 45vh;
-          }
       
     }
     
@@ -43,5 +39,12 @@
     @media (max-width: 1000px) {
       .con-curve {
           transform: scaleX(1); 
+      }
+    }
+
+    @media (max-width: 320px) {
+    
+      .img-curve {
+        width: 30vh;
       }
     }

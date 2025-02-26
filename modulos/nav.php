@@ -3,7 +3,22 @@
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
+
+$timeout = 300;
+
+if (isset($_SESSION['LAST_ACTIVITY'])) {
+  $inactividad = time() - $_SESSION['LAST_ACTIVITY'];
+  if ($inactividad > $timeout) {
+    session_unset();
+    session_destroy();
+    header("Location: ./vista/login.php?timeout=true");
+    exit();
+  }
+}
+
+$_SESSION['LAST_ACTIVITY'] = time();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -77,13 +92,13 @@ if (session_status() == PHP_SESSION_NONE) {
 
               switch ($_SESSION['user_role']) {
                 case 'admin':
-                  $dashboardLink = 'dashboard/admin.php';
+                  $dashboardLink = 'roles/admin.php';
                   break;
                 case 'editor':
-                  $dashboardLink = 'dashboard/editor.php';
+                  $dashboardLink = 'roles/editor.php';
                   break;
                 case 'usuario':
-                  $dashboardLink = 'dashboard/user.php';
+                  $dashboardLink = 'roles/user.php';
                   break;
                 default:
                   $dashboardLink = '#';

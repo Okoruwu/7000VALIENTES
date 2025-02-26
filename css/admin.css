@@ -21,12 +21,26 @@ body {
     display: flex;
 }
 
+.btn-primary{
+    width: 15vh;
+    border-radius: inherit;
+    background-color: #4782a4 !important;    
+}
+
+.offcanvas-body {
+background-color: #a9d8e1 !important;
+}
 
 .sidebar {
-    width: 250px;
+    width: 365px;
+    height: 85vh;
     background: rgb(0 0 0 / 10%);
     padding: 20px;
     color: white;
+}
+
+.offcanvas-header{
+    background-color: #a9d8e1 !important;
 }
 
 .sidebar-header h2 {
@@ -233,7 +247,7 @@ header {
     }
    }
 
-   @media (max-width: 600px) {
+   @media (max-width: 620px) {
     .container{
 
         display: block;
@@ -245,7 +259,7 @@ header {
 
     .main-content{
         position: relative;
-        width: 37vh;
+        width: 88.5vh;
     }
 
     .form-user{
@@ -268,7 +282,7 @@ header {
 
     .main-content{
         position: relative;
-        width: 37vh;
+        width: 43vh;
     }
 
     .form-user{

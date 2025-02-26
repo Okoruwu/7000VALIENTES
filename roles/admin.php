@@ -49,17 +49,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard de Administración</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/admin.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="sidebar-header">
-            <div class="logo"> 
-            <img src="../resources/logo.png" alt="" width="270" height="75">      
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" 
+    aria-controls="staticBackdrop"> Menu</button>
+    
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <nav class="sidebar">
+
+          <div class="logo"> 
+          <img src="../resources/logo.png" alt="" width="270" height="75">   
         </div>
 
+            <div class="sidebar-header">
                 <h2>Admin Panel</h2>
             </div>
             <ul class="sidebar-menu">
@@ -68,6 +83,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li> <a href="">Cerrar Sesión</a></li>                
             </ul>
         </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
 
         <div class="main-content">
             <header>

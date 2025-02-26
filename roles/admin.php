@@ -58,33 +58,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" 
-    aria-controls="staticBackdrop"> Menu</button>
-    
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-      <div class="offcanvas-header">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop"> Menu</button>
 
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          <nav class="sidebar">
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
 
-          <div class="logo"> 
-          <img src="../resources/logo.png" alt="" width="270" height="75">   
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+            <div>
+                <nav class="sidebar">
 
-            <div class="sidebar-header">
-                <h2>Admin Panel</h2>
+                    <div class="logo">
+                        <img src="../resources/logo.png" alt="" width="270" height="75">
+                    </div>
+
+                    <div class="sidebar-header">
+                        <h2>Admin Panel</h2>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li><a href="javascript:void(0)" onclick="showSection('users')">Usuarios</a></li>
+                        <li><a href="javascript:void(0)" onclick="showSection('events')">Eventos</a></li>
+                        <li> <a href="">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="sidebar-menu">
-                <li><a href="javascript:void(0)" onclick="showSection('users')">Usuarios</a></li>
-                <li><a href="javascript:void(0)" onclick="showSection('events')">Eventos</a></li>
-                <li> <a href="">Cerrar Sesión</a></li>                
-            </ul>
-        </nav>
         </div>
-      </div>
     </div>
 
     <div class="container">

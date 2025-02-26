@@ -18,11 +18,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     calendar.addEventListener("click", function (e) {
-        const imagePath = "https://acortar.link/potzGv";
         if (e.target.classList.contains("day")) {
             let selectedDay = e.target.dataset.day;
-            info.innerHTML = `${selectedDay} 
-            <img src="${imagePath}" alt="Presentación de imagen">`;
+            let today = new Date();
+            let month = today.getMonth() + 1;
+            let year = today.getFullYear();
+
+            let formattedDate = `${year}-${month.toString().padStart(2, "0")}-${selectedDay.padStart(2, "0")}`;
+
+            fetch(`calendario.php?fecha=${formattedDate}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Error en la respuesta del servidor");
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.length > 0) {
+                        let evento = data[0];
+                        info.innerHTML = `
+                            
+                            ${evento.imagen_url ? `<img src="${evento.imagen_url}" alt="Imagen del evento" />` : ''}
+                        `;
+                    } else {
+                        info.innerHTML = `<p>No hay eventos para esta fecha.</p>`;
+                    }
+                })
+                .catch(error => console.error("Error al obtener el evento:", error));
         }
     });
 

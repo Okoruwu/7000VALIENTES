@@ -1,4 +1,23 @@
 <?php
+include_once './bd/procedimientos.php';
+
+if (isset($_GET['fecha'])) {
+    header('Content-Type: application/json; charset=utf-8');
+    $fecha = $_GET['fecha'];
+
+    $eventos = obtenerEventosPorFecha($fecha);
+
+    // Agrega una comprobación si no hay eventos o si hay un error
+    if (!$eventos) {
+        echo json_encode(["error" => "Error al obtener eventos"]);
+    } elseif (empty($eventos)) {
+        echo json_encode(["message" => "No hay eventos para esta fecha"]);
+    } else {
+        echo json_encode($eventos);
+    }
+    exit; // DETENER EJECUCIÓN
+}
+
 include_once './modulos/nav.php';
 ?>
 
@@ -15,7 +34,6 @@ include_once './modulos/nav.php';
     <link rel="stylesheet" href="./css/stylenav.css">
     <link rel="stylesheet" href="./css/load.css">
     <link rel="stylesheet" href="./css/calendario.css">
-
 </head>
 
 <body>
@@ -26,13 +44,12 @@ include_once './modulos/nav.php';
     <?php include_once './modulos/nav.php'; ?>
 
     <div class="content">
-    <h1>Eventos del mes</h1>
+        <h1>Eventos del mes</h1>
         <div class="container">
             <div id="calendar"></div>
             <div id="info">
                 <h1>Próximos eventos</h1>
-                <p class="desc">Presiona un dia del calendario 
-                    para conocer si hay un evento próximo! </p>
+                <p class="desc">Presiona un día del calendario para conocer si hay un evento próximo!</p>
             </div>
         </div>
     </div>

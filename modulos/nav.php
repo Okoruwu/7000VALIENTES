@@ -49,7 +49,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <a class="nav-link" href="javascript:void(0);" onclick="navigateOrScroll('hero-image')">Inicio</a>
+          <a class="nav-link" href="../index.php">Inicio</a>
           <a class="nav-link" href="javascript:void(0);" onclick="navigateOrScroll('cardback')">¿Quiénes Somos?</a>
 
           <li class="nav-item dropdown">
@@ -57,7 +57,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
               Eventos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./vista/calendario.php">Calendario</a></li>
+              <li><a class="dropdown-item" href="../vista/calendario.php">Calendario</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -65,7 +65,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
               Incripciones
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./vista/modulos.php">Módulos</a></li>
+              <li><a class="dropdown-item" href="../vista/modulos.php">Módulos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -107,7 +107,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
 
               echo '<a class="nav-link" href="' . $dashboardLink . '">' . $_SESSION['user_name'] . '</a>';
             } else {
-              echo '<a class="nav-link" href="./vista/login.php">Iniciar sesión <img src="../resources/user.png" width="20" height="20" class="me-1"></a>';
+              echo '<a class="nav-link" href="../vista/login.php">Iniciar sesión <img src="../resources/user.png" width="20" height="20" class="me-1"></a>';
             }
             ?>
           </li>

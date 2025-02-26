@@ -50,7 +50,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <a class="nav-link" href="../index.php">Inicio</a>
-          <a class="nav-link" href="javascript:void(0);" onclick="navigateOrScroll('cardback')">¿Quiénes Somos?</a>
+          <a class="nav-link" href="../index.php">¿Quiénes Somos?</a>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

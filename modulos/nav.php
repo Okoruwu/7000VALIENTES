@@ -13,8 +13,8 @@ if (session_status() == PHP_SESSION_NONE) {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/stylenav.css">
-  <link rel="stylesheet" href="./css/stylefon.css">
+  <link rel="stylesheet" href="../css/stylenav.css">
+  <link rel="stylesheet" href="../css/stylefon.css">
 
 </head>
 
@@ -25,7 +25,7 @@ if (session_status() == PHP_SESSION_NONE) {
   <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./resources/logo.png" alt="" width="300" height="80" />
+        <img src="../resources/logo.png" alt="" width="300" height="80" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,7 +92,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
               echo '<a class="nav-link" href="' . $dashboardLink . '">' . $_SESSION['user_name'] . '</a>';
             } else {
-              echo '<a class="nav-link" href="./vista/login.php">Iniciar sesión <img src="./resources/user.png" width="20" height="20" class="me-1"></a>';
+              echo '<a class="nav-link" href="./vista/login.php">Iniciar sesión <img src="../resources/user.png" width="20" height="20" class="me-1"></a>';
             }
             ?>
           </li>
@@ -102,7 +102,7 @@ if (session_status() == PHP_SESSION_NONE) {
   </nav>
 </body>
 
-<script src="js/anim_nav.js"></script>
-<script src="js/scroll.js"></script>
+<script src="../js/anim_nav.js"></script>
+<script src="../js/scroll.js"></script>
 
 </html>

@@ -34,8 +34,8 @@ if (session_status() == PHP_SESSION_NONE) {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <a class="nav-link" href="javascript:void(0);" onclick="scrollToHeroImage()">Inicio</a>
-          <a class="nav-link" href="javascript:void(0);" onclick="scrollToCardback()">¿Quiénes Somos?</a>
+          <a class="nav-link" href="javascript:void(0);" onclick="navigateOrScroll('hero-image')">Inicio</a>
+          <a class="nav-link" href="javascript:void(0);" onclick="navigateOrScroll('cardback')">¿Quiénes Somos?</a>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

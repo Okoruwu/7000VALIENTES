@@ -28,8 +28,8 @@ $_SESSION['LAST_ACTIVITY'] = time();
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/stylenav.css">
-  <link rel="stylesheet" href="./css/stylefon.css">
+  <link rel="stylesheet" href="../css/stylenav.css">
+  <link rel="stylesheet" href="../css/stylefon.css">
 
 </head>
 
@@ -40,7 +40,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
   <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./resources/logo.png" alt="" width="300" height="80" />
+        <img src="../resources/logo.png" alt="" width="300" height="80" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <a class="nav-link" href="javascript:void(0);" onclick="navigateOrScroll('hero-image')">Inicio</a>
+          <a class="nav-link" href="../index.php">Inicio</a>
           <a class="nav-link" href="javascript:void(0);" onclick="navigateOrScroll('cardback')">¿Quiénes Somos?</a>
 
           <li class="nav-item dropdown">
@@ -57,7 +57,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
               Eventos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./vista/calendario.php">Calendario</a></li>
+              <li><a class="dropdown-item" href="../vista/calendario.php">Calendario</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -65,7 +65,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
               Incripciones
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./vista/modulos.php">Módulos</a></li>
+              <li><a class="dropdown-item" href="../vista/modulos.php">Módulos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -107,7 +107,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
 
               echo '<a class="nav-link" href="' . $dashboardLink . '">' . $_SESSION['user_name'] . '</a>';
             } else {
-              echo '<a class="nav-link" href="./vista/login.php">Iniciar sesión <img src="./resources/user.png" width="20" height="20" class="me-1"></a>';
+              echo '<a class="nav-link" href="../vista/login.php">Iniciar sesión <img src="../resources/user.png" width="20" height="20" class="me-1"></a>';
             }
             ?>
           </li>
@@ -117,7 +117,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
   </nav>
 </body>
 
-<script src="js/anim_nav.js"></script>
-<script src="js/scroll.js"></script>
+<script src="../js/anim_nav.js"></script>
+<script src="../js/scroll.js"></script>
 
 </html>

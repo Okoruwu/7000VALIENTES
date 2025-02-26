@@ -1,5 +1,5 @@
 <?php
-include_once './bd/procedimientos.php';
+include_once '../bd/procedimientos.php';
 
 if (isset($_GET['fecha'])) {
     header('Content-Type: application/json; charset=utf-8');
@@ -18,7 +18,7 @@ if (isset($_GET['fecha'])) {
     exit; // DETENER EJECUCIÓN
 }
 
-include_once './modulos/nav.php';
+include_once '../modulos/nav.php';
 ?>
 
 <!DOCTYPE html>
@@ -31,9 +31,9 @@ include_once './modulos/nav.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/stylenav.css">
-    <link rel="stylesheet" href="./css/load.css">
-    <link rel="stylesheet" href="./css/calendario.css">
+
+    <link rel="stylesheet" href="../css/load.css">
+    <link rel="stylesheet" href="../css/calendario.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@ include_once './modulos/nav.php';
         <div class="spinner"></div>
     </div>
 
-    <?php include_once './modulos/nav.php'; ?>
+    <?php include_once '../modulos/nav.php'; ?>
 
     <div class="content">
         <h1>Eventos del mes</h1>
@@ -54,10 +54,10 @@ include_once './modulos/nav.php';
         </div>
     </div>
 
-    <script src="./js/load.js"></script>
-    <script src="./js/calendario.js"></script>
+    <script src="../js/load.js"></script>
+    <script src="../js/calendario.js"></script>
 
-    <?php include './modulos/footer.php'; ?>
+    <?php include '../modulos/footer.php'; ?>
 </body>
 
 </html>

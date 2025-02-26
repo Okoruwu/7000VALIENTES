@@ -1,3 +1,10 @@
+<?php
+if (isset($_GET['timeout'])) {
+  echo "<p style='color:red;'>Tu sesión ha expirado. Por favor, inicia sesión de nuevo.</p>";
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,53 +20,53 @@
 
 <body>
 
-<div class="cardback">
+  <div class="cardback">
 
-<div class="login-form">
+    <div class="login-form">
 
-<div class="conlog-img"> </div>
+      <div class="conlog-img"> </div>
 
-<div class="con-curve">
+      <div class="con-curve">
         <img src="../resources/curva.png" alt="curva" class="img-curve">
-</div>
+      </div>
 
-<p class="p-white">EL SEÑOR TE PROTEGERÁ,</p>
-<p class="p-white">DE TODO MAL, PROTEGERA TU VIDA.</p>
+      <p class="p-white">EL SEÑOR TE PROTEGERÁ,</p>
+      <p class="p-white">DE TODO MAL, PROTEGERA TU VIDA.</p>
 
-<div class="con-nub">
+      <div class="con-nub">
         <img src="../resources/nubes.png" alt="nube" class="img-nub">
-</div>
+      </div>
 
-<h1>Bienvenidos</h1>
+      <h1>Bienvenidos</h1>
 
-  <form action="./bd/testimonio.php" method="POST">
+      <form action="./bd/testimonio.php" method="POST">
 
-    <input type="text" id="user" name="user" placeholder="Usuario" required>
+        <input type="text" id="user" name="user" placeholder="Usuario" required>
 
-    <input type="text" id="pass" name="contfra" placeholder="Contraseña" required>
+        <input type="text" id="pass" name="contfra" placeholder="Contraseña" required>
 
-    <div class="btn-send">
-      <button type="submit">Iniciar Sesión</button>
+        <div class="btn-send">
+          <button type="submit">Iniciar Sesión</button>
+        </div>
+
+      </form>
     </div>
 
-    </form>
-</div>
+  </div>
 
-</div>    
-
-          <?php
-          // depuración 
-          // session_start();
-          // if (isset($_SESSION['error'])) {
-          //   echo "<script>console.error('PHP Error: " . addslashes($_SESSION['error']) . "');</script>";
-          //   unset($_SESSION['error']);
-          // }
-          
-          // if (isset($_SESSION['success'])) {
-          //   echo "<script>console.log('PHP Success: " . addslashes($_SESSION['success']) . "');</script>";
-          //   unset($_SESSION['success']);
-          // }
-          ?>
+  <?php
+  // depuración 
+  // session_start();
+  // if (isset($_SESSION['error'])) {
+  //   echo "<script>console.error('PHP Error: " . addslashes($_SESSION['error']) . "');</script>";
+  //   unset($_SESSION['error']);
+  // }
+  
+  // if (isset($_SESSION['success'])) {
+  //   echo "<script>console.log('PHP Success: " . addslashes($_SESSION['success']) . "');</script>";
+  //   unset($_SESSION['success']);
+  // }
+  ?>
 
 
 </body>

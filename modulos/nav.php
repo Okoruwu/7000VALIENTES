@@ -50,7 +50,7 @@ if (session_status() == PHP_SESSION_NONE) {
               Incripciones
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./vista/comment.php">Módulos</a></li>
+              <li><a class="dropdown-item" href="./vista/modulos.php">Módulos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">

@@ -39,7 +39,7 @@ if (isset($_GET['timeout'])) {
 
       <h1>Bienvenidos</h1>
 
-      <form action="./bd/testimonio.php" method="POST">
+      <form action="/7000VALIENTES/bd/testimonio.php" method="POST">
 
         <input type="text" id="user" name="user" placeholder="Usuario" required>
 

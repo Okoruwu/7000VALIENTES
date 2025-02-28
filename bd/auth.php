@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../bd/Database.php';
+require_once '/7000VALIENTES/bd/Database.php';
 
 // Depuracion de errores
 // error_reporting(E_ALL); 
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['error'] = "Todos los campos son obligatorios.";
         // Depuracion de errores
         // echo "<script>console.error('Error: Todos los campos son obligatorios.');</script>";
-        header("Location: ../vista/login.php");
+        header("Location: /7000VALIENTES/vista/login.php");
         exit();
     }
 
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['error'] = "Error de conexión con la base de datos.";
         // Depuracion de errores
         // echo "<script>console.error('Error de conexión con la base de datos: " . addslashes($conn->connect_error) . "');</script>";
-        header("Location: ../vista/login.php");
+        header("Location: /7000VALIENTES/vista/login.php");
         exit();
     }
 
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['error'] = "Error en la consulta.";
         // Depuracion de errores
         // echo "<script>console.error('Error en la consulta SQL: " . addslashes($conn->error) . "');</script>";
-        header("Location: ../vista/login.php");
+        header("Location: /7000VALIENTES/vista/login.php");
         exit();
     }
 
@@ -58,14 +58,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             switch ($user['rol']) {
                 case 'admin':
-                    header("Location: ../dashboard/admin.php");
+                    header("Location: /7000VALIENTES/dashboard/admin.php");
                     break;
                 case 'editor':
-                    header("Location: ../dashboard/editor.php");
+                    header("Location: /7000VALIENTES/dashboard/editor.php");
                     break;
                 case 'usuario':
                 default:
-                    header("Location: ../dashboard/usuario.php");
+                    header("Location: /7000VALIENTES/dashboard/usuario.php");
                     break;
             }
             exit();
@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // echo "<script>console.warn('Correo no encontrado en la base de datos: " . addslashes($email) . "');</script>";
     }
 
-    header("Location: ../vista/login.php");
+    header("Location: /7000VALIENTES/vista/login.php");
     exit();
 }
 ?>

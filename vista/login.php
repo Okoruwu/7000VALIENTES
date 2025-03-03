@@ -39,7 +39,7 @@ if (isset($_GET['timeout'])) {
 
       <h1>Bienvenidos</h1>
 
-      <form action="/7000VALIENTES/bd/testimonio.php" method="POST">
+      <form action="../bd/auth.php" method="POST">
 
         <input type="text" id="user" name="user" placeholder="Usuario" required>
 
@@ -56,16 +56,16 @@ if (isset($_GET['timeout'])) {
 
   <?php
   // depuración 
-  // session_start();
-  // if (isset($_SESSION['error'])) {
-  //   echo "<script>console.error('PHP Error: " . addslashes($_SESSION['error']) . "');</script>";
-  //   unset($_SESSION['error']);
-  // }
-  
-  // if (isset($_SESSION['success'])) {
-  //   echo "<script>console.log('PHP Success: " . addslashes($_SESSION['success']) . "');</script>";
-  //   unset($_SESSION['success']);
-  // }
+  session_start();
+  if (isset($_SESSION['error'])) {
+    echo "<script>console.error('PHP Error: " . addslashes($_SESSION['error']) . "');</script>";
+    unset($_SESSION['error']);
+  }
+
+  if (isset($_SESSION['success'])) {
+    echo "<script>console.log('PHP Success: " . addslashes($_SESSION['success']) . "');</script>";
+    unset($_SESSION['success']);
+  }
   ?>
 
 

@@ -12,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Todos los campos son obligatorios.");
     }
 
-    $db = Database::getInstance();
-    $conn = $db->getConnection();
+    $conn = Database::getConnection();
+
 
     $query = "INSERT INTO testimonios (nombre, email, ciudad, pais, testimonio) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($query);

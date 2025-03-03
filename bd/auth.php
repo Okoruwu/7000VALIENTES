@@ -1,31 +1,34 @@
 <?php
+
+
 session_start();
-require_once '/7000VALIENTES/bd/Database.php';
+require_once 'Database.php';
 
 // Depuracion de errores
-// error_reporting(E_ALL); 
-// ini_set('display_errors', 1);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = trim($_POST['email']);
-    $password = trim($_POST['password']);
+    $email = trim($_POST['user']);
+    $password = trim($_POST['contfra']);
+
 
     if (empty($email) || empty($password)) {
         $_SESSION['error'] = "Todos los campos son obligatorios.";
         // Depuracion de errores
-        // echo "<script>console.error('Error: Todos los campos son obligatorios.');</script>";
-        header("Location: /7000VALIENTES/vista/login.php");
+        echo "<script>console.error('Error: Todos los campos son obligatorios.');</script>";
+        header("Location: ../vista/login.php");
         exit();
     }
 
-    $db = Database::getInstance();
-    $conn = $db->getConnection();
+    $conn = Database::getConnection();
+
 
     if ($conn->connect_error) {
         $_SESSION['error'] = "Error de conexión con la base de datos.";
         // Depuracion de errores
-        // echo "<script>console.error('Error de conexión con la base de datos: " . addslashes($conn->connect_error) . "');</script>";
-        header("Location: /7000VALIENTES/vista/login.php");
+        echo "<script>console.error('Error de conexión con la base de datos: " . addslashes($conn->connect_error) . "');</script>";
+        header("Location: ../vista/login.php");
         exit();
     }
 
@@ -35,8 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$stmt) {
         $_SESSION['error'] = "Error en la consulta.";
         // Depuracion de errores
-        // echo "<script>console.error('Error en la consulta SQL: " . addslashes($conn->error) . "');</script>";
-        header("Location: /7000VALIENTES/vista/login.php");
+        echo "<script>console.error('Error en la consulta SQL: " . addslashes($conn->error) . "');</script>";
+        header("Location: ../vista/login.php");
         exit();
     }
 
@@ -54,33 +57,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_role'] = $user['rol'];
 
             // Depuracion de errores
-            // echo "<script>console.log('Inicio de sesión exitoso: Usuario " . addslashes($user['nombre']) . " con rol " . addslashes($user['rol']) . "');</script>";
+            echo "<script>console.log('Inicio de sesión exitoso: Usuario " . addslashes($user['nombre']) . " con rol " . addslashes($user['rol']) . "');</script>";
 
             switch ($user['rol']) {
                 case 'admin':
-                    header("Location: /7000VALIENTES/dashboard/admin.php");
+                    header("Location: ../roles/admin.php");
                     break;
                 case 'editor':
-                    header("Location: /7000VALIENTES/dashboard/editor.php");
+                    header("Location: ../roles/editor.php");
                     break;
                 case 'usuario':
                 default:
-                    header("Location: /7000VALIENTES/dashboard/usuario.php");
+                    header("Location: ../roles/usuario.php");
                     break;
             }
             exit();
         } else {
             $_SESSION['error'] = "Contraseña incorrecta.";
             // Depuracion de errores
-            // echo "<script>console.warn('Contraseña incorrecta para el usuario: " . addslashes($email) . "');</script>";
+            echo "<script>console.warn('Contraseña incorrecta para el usuario: " . addslashes($email) . "');</script>";
         }
     } else {
         $_SESSION['error'] = "Correo no registrado.";
         // Depuracion de errores
-        // echo "<script>console.warn('Correo no encontrado en la base de datos: " . addslashes($email) . "');</script>";
+        echo "<script>console.warn('Correo no encontrado en la base de datos: " . addslashes($email) . "');</script>";
     }
 
-    header("Location: /7000VALIENTES/vista/login.php");
+    header("Location: ../vista/login.php");
     exit();
 }
 ?>

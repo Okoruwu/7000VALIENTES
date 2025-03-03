@@ -29,7 +29,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
-    background-color: white;
+    background-color: rgb(77 114 156 / 41%);
     color: black;
     padding: 20px;
     border-radius: 10px;
@@ -43,15 +43,20 @@ body {
     border-radius: 10px;
 }
 
+p{
+    color: #ffffff;
+}
+
 #calendar {
-    border: 2px solid #2AB7B3;
-    background: aliceblue;
+    border: 3px solid #2AB7B3;
+    background: rgb(206 205 205 / 41%);
     flex-grow: 1;
     flex-basis: 300px;
+    color: aliceblue;
 }
 
 #info {
-    border: 2px solid #2AB7B3;
+    border: 3px solid #2AB7B3;
 }
 
 table {
@@ -63,7 +68,7 @@ td {
     width: 14%;
     height: 50px;
     text-align: center;
-    border: 1px solid #2AB7B3;
+    border: 2px solid #2AB7B3;
     cursor: pointer;
 }
 

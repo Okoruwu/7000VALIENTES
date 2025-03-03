@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="icon" type="image/png" href="../resources/iconpag.png">
+
     <link rel="stylesheet" href="../css/load.css">
     <link rel="stylesheet" href="../css/modulos.css">
 </head>

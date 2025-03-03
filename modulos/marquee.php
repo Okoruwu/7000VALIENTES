@@ -11,7 +11,7 @@
     <!-- Barra de Marquee -->
     <div class="marquee-container">
         <div class="marquee">
-            Revisa nuestros proximos eventos en nuestro mapa interactivo
+        ¡No te pierdas nada! Consulta el calendario y descubre los eventos del mes
         </div>
     </div>
 

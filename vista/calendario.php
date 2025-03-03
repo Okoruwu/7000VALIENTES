@@ -31,6 +31,8 @@ include_once '../modulos/nav.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <link rel="icon" type="image/png" href="../resources/iconpag.png">
 
     <link rel="stylesheet" href="../css/load.css">
     <link rel="stylesheet" href="../css/calendario.css">
@@ -44,11 +46,11 @@ include_once '../modulos/nav.php';
     <?php include_once '../modulos/nav.php'; ?>
 
     <div class="content">
-        <h1>Eventos del mes</h1>
+        <h1>Eventos <span id="titulo"></span> </h1>
         <div class="container">
             <div id="calendar"></div>
             <div id="info">
-                <h1>Próximos eventos</h1>
+            <h1>Próximos eventos</h1>
                 <p class="desc">Presiona un día del calendario para conocer si hay un evento próximo!</p>
             </div>
         </div>
@@ -56,6 +58,7 @@ include_once '../modulos/nav.php';
 
     <script src="../js/load.js"></script>
     <script src="../js/calendario.js"></script>
+    <script src="../js/calendarmes.js"></script>    
 
     <?php include '../modulos/footer.php'; ?>
 </body>

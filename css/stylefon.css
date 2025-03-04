@@ -1,16 +1,22 @@
-.cardback{
-    background-color: #091854;
-}
 
-.con-curve{
-    position: absolute;
-    align-content: center;
+.con-curve1{
     opacity: 100%;
-    scale: -1;
-    transform: scaleX(1.3);
+    transform: translateY(-33vh);
     overflow: hidden;
   }
   
+  .con-curve2{
+    opacity: 100%;
+    transform: translateY(-75vh);
+    overflow: hidden;
+  }
+
+  .con-curazu{
+    opacity: 100%;
+    transform: translateY(-10vh);
+    overflow: hidden;
+  }
+
   .img-curve{
     width: 100%; 
     height: auto;

@@ -12,6 +12,7 @@
     font-style: normal;
   }
 
+
 .testimonio-form {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -96,16 +97,31 @@
     text-align: center;
 }
 
-h3 {
+.quien {
     text-align: right;
-    line-height: 2.5;
-    font-family:'Darkline';
-    font-size: 3.5em;
+    font-family: 'Darkline';
+    font-size: 4.8em;
     color: #ffffff;
     margin-right: 30px;
-    transform: perspective(10px);
-    margin-top: 20px;
+    transform: translateY(-48vh);
   }
+
+.test{
+    font-family: 'Darkline';
+    font-size: 6.8em;
+    color: #ffffff;
+    margin-left: 11vh;
+    transform: translateY(-10vh);
+}
+
+.test-ti{
+    text-align: right;
+    font-family: 'Darkline';
+    font-size: 4.8em;
+    color: #ffffff;
+    margin-right: 5vh;
+    transform: translateY(-90vh);
+}
   
   @media (max-width: 600px) {
     .testimonio-form {

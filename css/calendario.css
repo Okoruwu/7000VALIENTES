@@ -6,7 +6,7 @@
   }
 
 body {
-    background-color: #091854;
+    background: url(../resources/bg-fonnub.jpg) center / cover no-repeat !important;
     color: #2AB7B3;
     font-family: Arial, sans-serif;
     margin: 0;

@@ -36,53 +36,45 @@
     </div>
   </div>
 
-  <div class="con-curve">
+  <div class="con-curve1">
     <img src="./resources/curva.png" alt="curva" class="img-curve">
   </div>
 
-  <div class="cardback">
-
-    <h3>¿Quiénes somos?</h3>
+    <h3 class="quien">¿Quiénes somos?</h3>
 
     <div class="container">
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <h2 style="text-align: center;">Visión</h2>
-          <p style="text-align: justify;">"Ser un remanente fiel transformador por Dios,
+    <div class="con-visi">
+          <h2 class="Toran">Visión</h2>
+          <p class="p-mvwhi">"Ser un remanente fiel transformador por Dios,
             comprometido a llevar el evangelio de Cristo con valentia, impactando nuestra
             comunidad y más alla de nuestras fronteras con su amor y proposito."</p>
         </div>
-      </div>
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <h2 style="text-align: center;">Misión</h2>
-          <p style="text-align: justify;">"Evangelizar, discipular y servir con estrategias
+   
+        <div class="con-misi">        
+          <h2 class="Toran">Misión</h2>
+          <p class="p-mvwhi">"Evangelizar, discipular y servir con estrategias
             creativas, guiando a las personas a ser transformadas
             en Cristo, a permanecer en la fe y a liderar para la gloria de Dios."</p>
         </div>
-      </div>
+     </div>
 
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <h2 style="text-align: center;">Objetivos</h2>
-          <p style="text-align: justify;">"Ser un remanente fiel transformador por Dios,
-            comprometido a llevar el evangelio de Cristo con valentia, impactando nuestra
-            comunidad y más alla de nuestras fronteras con su amor y proposito.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="fon-test">
 
-  <div class="con-curve">
+  <div class="con-curazu"> 
+  <img src="./resources/cur-azul2.svg" alt="curva" class="img-curve"> 
+  </div> 
+
+  <h3 class="test">Testimonios</h3>
+
+  </div>     
+
+  <div class="con-curve2">
     <img src="./resources/curva.png" alt="curva" class="img-curve">
   </div>
 
-  <div class="cardback">
+  <h3 class="test-ti">Escribe tu testimonio</h3>
 
-    <h3>Escribe tu testimonio</h3>
+  <div class="cardback-seg">
 
     <div class="testimonio-form">
 

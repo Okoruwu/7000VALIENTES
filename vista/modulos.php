@@ -49,44 +49,46 @@
         <h1> HORARIOS PRINCIPALES </h1>
 
         <div class="text-horarios">
-            <p class="p-dom">DOMINGOS</p>
-            <p class="p-mir">MIERCOLES</p>
+        <button class="btn-horario active" id="btn-dom">DOMINGOS</button>
+        <button class="btn-horario" id="btn-mir">MIÉRCOLES</button>
         </div>
 
         <div class="container">
             <div class="card">
-                <h3>Materia 1</h3>
-                <p>Maestro: Juan Pérez</p>
-                <p>Horario: 10:00 - 11:00 AM</p>
+            <h3></h3>
+        <p class="profesor"></p>
+        <p class="horario"></p>
+
             </div>
             <div class="card">
-                <h3>Materia 2</h3>
-                <p>Maestro: Ana López</p>
-                <p>Horario: 11:00 - 12:00 PM</p>
+            <h3></h3>
+        <p class="profesor"></p>
+        <p class="horario"></p>
             </div>
             <div class="card">
-                <h3>Materia 3</h3>
-                <p>Maestro: Carlos Ruiz</p>
-                <p>Horario: 12:00 - 1:00 PM</p>
+            <h3></h3>
+        <p class="profesor"></p>
+        <p class="horario"></p>
             </div>
             <div class="card">
-                <h3>Materia 4</h3>
-                <p>Maestro: María Gómez</p>
-                <p>Horario: 2:00 - 3:00 PM</p>
+            <h3></h3>
+        <p class="profesor"></p>
+        <p class="horario"></p>
             </div>
             <div class="card">
-                <h3>Materia 5</h3>
-                <p>Maestro: Pedro Sánchez</p>
-                <p>Horario: 3:00 - 4:00 PM</p>
+            <h3></h3>
+        <p class="profesor"></p>
+        <p class="horario"></p>
             </div>
             <div class="card">
-                <h3>Materia 6</h3>
-                <p>Maestro: Sofía Fernández</p>
-                <p>Horario: 4:00 - 5:00 PM</p>
+            <h3></h3>
+        <p class="profesor"></p>
+        <p class="horario"></p>
             </div>
         </div>
     </div>
 
+    <script src="../js/modulos.js"></script>
     <script src="../js/load.js"></script>
 
     <?php include '../modulos/footer.php'; ?>

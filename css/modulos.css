@@ -54,29 +54,30 @@ body {
     margin: auto;
 }
 
-.p-mir{
-    color: white;
+.btn-horario {
     font-family: 'Romanica';
-    text-align: center;
-    padding: 7px;
-    font-weight: bold;
-    border-radius: 5px;
+    color: white;
     background-color: #cf7031;
-    letter-spacing: 3px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
     width: 25vh;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
-.p-dom{
-    color: white;
-    text-align: center;
-    font-family: 'Romanica';
-    padding: 7px;
-    font-weight: bold;
-    border-radius: 5px;
-    background-color: #cf7031;
-    letter-spacing: 3px;
-    width: 25vh;
+.btn-horario:hover {
+    background-color: #1d5f87;
 }
+
+.btn-horario.active {
+    background-color: #1d5f87;
+}
+
 
 h1 {
     text-align: center;
@@ -116,13 +117,19 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 1s ease, box-shadow 0.3s ease;
 }
 
-/* Animación de hover para las tarjetas */
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+.card-back {
+    transform: rotateY(180deg);
 }
 
 /* Efecto de clic en las tarjetas */

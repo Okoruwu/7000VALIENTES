@@ -1,7 +1,7 @@
 <?php
-if (isset($_GET['timeout'])) {
-  echo "<p style='color:red;'>Tu sesión ha expirado. Por favor, inicia sesión de nuevo.</p>";
-}
+//if (isset($_GET['timeout'])) {
+  //echo "<p style='color:red;'>Tu sesión ha expirado. Por favor, inicia sesión de nuevo.</p>";
+//}
 ?>
 
 

@@ -64,7 +64,9 @@
 }
 
 .testimonio-form button:hover {
-    background-color: #cf7031;
+    background-color: #2b6e2c;
+    transition: background-color 0.3s ease;    
+    
 }
 
 
@@ -103,15 +105,15 @@
     font-size: 4.8em;
     color: #ffffff;
     margin-right: 30px;
-    transform: translateY(-48vh);
+    transform: translateY(-16vh);
   }
 
 .test{
     font-family: 'Darkline';
-    font-size: 6.8em;
+    font-size: 7.8em;
     color: #ffffff;
     margin-left: 11vh;
-    transform: translateY(-10vh);
+    transform: translateY(10vh);
 }
 
 .test-ti{
@@ -120,7 +122,7 @@
     font-size: 4.8em;
     color: #ffffff;
     margin-right: 5vh;
-    transform: translateY(-90vh);
+    transform: translateY(53vh);
 }
   
   @media (max-width: 600px) {

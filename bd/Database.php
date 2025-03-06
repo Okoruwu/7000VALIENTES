@@ -4,7 +4,7 @@ class Database
     private $servername = "localhost";
     private $username = "root";
     private $password = "";
-    private $dbname = "7000Valientes";
+    private $dbname = "7000valientes";
 
     private static $conn = null;
 

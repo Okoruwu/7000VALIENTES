@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = Database::getConnection();
 
 
-    $query = "INSERT INTO testimonios (nombre, email, ciudad, pais, testimonio) VALUES (?, ?, ?, ?, ?)";
+    $query = "INSERT INTO test (nombre, email, ciudad, pais, testimonio) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($query);
 
     if ($stmt) {
@@ -29,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = "Testimonio de: $nombre\nEmail: $email\nCiudad: $ciudad\nPaís: $pais\n\nTestimonio: $testimonio";
             $headers = "From: no-reply@tudominio.com";
 
+            
             if (mail($to, $subject, $message, $headers)) {
                 echo "Correo enviado con éxito.";
             } else {

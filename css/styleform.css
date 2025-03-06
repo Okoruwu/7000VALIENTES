@@ -112,9 +112,37 @@
     font-family: 'Darkline';
     font-size: 7.8em;
     color: #ffffff;
-    margin-left: 11vh;
+    margin-left: 15vh;
     transform: translateY(10vh);
 }
+
+.carousel {
+    width: 35%;
+    position: relative;
+    left: 115vh;
+    transform: translateY(-16vh);
+}
+
+.registro {
+    padding: 20px;
+    text-align: center;
+}
+
+  .test-bd{
+    color: white;
+    text-align: center;
+    font-family:'Romanica';    
+    padding: 7px; 
+    font-weight: bold;
+  }
+
+  .tes-bd{
+    color: white;
+    text-align: justify;
+    font-family:'Romanica';    
+    padding: 7px; 
+    font-weight: bold;
+  }
 
 .test-ti{
     text-align: right;

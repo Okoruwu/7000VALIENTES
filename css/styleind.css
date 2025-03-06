@@ -121,6 +121,7 @@ h1 {
   margin-bottom: 65vh;
 }
 
+
 @media (max-width: 768px) {
   .text-overlay h1 {
     font-size: 5vw;

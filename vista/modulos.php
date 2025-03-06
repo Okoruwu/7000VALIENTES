@@ -1,3 +1,14 @@
+<?php
+require_once '../bd/Database.php';
+
+$query = "SELECT materia, maestro, hora FROM horarios";
+
+$conn = Database::getConnection();
+$stmt = $conn->prepare($query);
+$stmt->execute();
+$result = $stmt->get_result();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -53,40 +64,26 @@
         <button class="btn-horario" id="btn-mir">MIÉRCOLES</button>
         </div>
 
-        <div class="container">
-            <div class="card">
-            <h3></h3>
-        <p class="profesor"></p>
-        <p class="horario"></p>
+        <?php
+  if ($result->num_rows > 0) {
+      while ($data = $result->fetch_assoc()) {
+          ?>
 
-            </div>
-            <div class="card">
-            <h3></h3>
-        <p class="profesor"></p>
-        <p class="horario"></p>
-            </div>
-            <div class="card">
-            <h3></h3>
-        <p class="profesor"></p>
-        <p class="horario"></p>
-            </div>
-            <div class="card">
-            <h3></h3>
-        <p class="profesor"></p>
-        <p class="horario"></p>
-            </div>
-            <div class="card">
-            <h3></h3>
-        <p class="profesor"></p>
-        <p class="horario"></p>
-            </div>
-            <div class="card">
-            <h3></h3>
-        <p class="profesor"></p>
-        <p class="horario"></p>
+        <div class="container">
+            <div class="card" id="dia">
+                <p class="materia"><?php echo htmlspecialchars($data['materia'] ?? 'no disponible'); ?></p>
+                <p class="profesor"><?php echo htmlspecialchars($data['maestro'] ?? 'no disponible'); ?></p>
+                <p class="horario"><?php echo htmlspecialchars($data['hora'] ?? 'no disponible'); ?></p>
             </div>
         </div>
     </div>
+    </div>
+    <?php
+      }
+  } else {
+      echo "<p>No hay registros disponibles.</p>";
+  }
+  ?>
 
     <script src="../js/modulos.js"></script>
     <script src="../js/load.js"></script>

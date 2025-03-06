@@ -24,6 +24,7 @@ function actualizarMaterias(dia) {
         }, 300);
     });
 
+
     btnDom.classList.toggle("active", dia === "domingos");
     btnMir.classList.toggle("active", dia === "miercoles");
 }

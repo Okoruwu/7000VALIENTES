@@ -70,7 +70,7 @@ $result = $stmt->get_result();
           ?>
 
         <div class="container">
-            <div class="card" id="dia">
+            <div class="card">
                 <p class="materia"><?php echo htmlspecialchars($data['materia'] ?? 'no disponible'); ?></p>
                 <p class="profesor"><?php echo htmlspecialchars($data['maestro'] ?? 'no disponible'); ?></p>
                 <p class="horario"><?php echo htmlspecialchars($data['hora'] ?? 'no disponible'); ?></p>

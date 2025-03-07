@@ -10,7 +10,7 @@ ini_set('display_errors', 1);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['user']);
-    $password = trim($_POST['contfra']);
+    $password = trim($_POST['contra']);
 
 
     if (empty($email) || empty($password)) {

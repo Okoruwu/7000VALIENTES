@@ -27,7 +27,15 @@ function eliminarUsuario($usuario_id)
 function agregarEvento($titulo, $descripcion, $fecha_evento, $imagen_url = null)
 {
     $conn = Database::getConnection();
+    if (!$conn) {
+        die("Error de conexión a la base de datos");
+    }
+
     $stmt = $conn->prepare("INSERT INTO eventos (titulo, descripcion, fecha_evento, imagen_url) VALUES (?, ?, ?, ?)");
+    if (!$stmt) {
+        die("Error en la preparación de la consulta: " . $conn->error);
+    }
+
     $stmt->bind_param("ssss", $titulo, $descripcion, $fecha_evento, $imagen_url);
     $result = $stmt->execute();
 

@@ -1,7 +1,7 @@
 <?php
-//if (isset($_GET['timeout'])) {
-  //echo "<p style='color:red;'>Tu sesión ha expirado. Por favor, inicia sesión de nuevo.</p>";
-//}
+if (isset($_GET['timeout'])) {
+  echo "<p style='color:red;'>Tu sesión ha expirado. Por favor, inicia sesión de nuevo.</p>";
+}
 ?>
 
 
@@ -44,7 +44,7 @@
 
         <input type="text" id="user" name="user" placeholder="Usuario" required>
 
-        <input type="text" id="pass" name="contfra" placeholder="Contraseña" required>
+        <input type="text" id="pass" name="contra" placeholder="Contraseña" required>
 
         <div class="btn-send">
           <button type="submit">Iniciar Sesión</button>

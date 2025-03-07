@@ -1,7 +1,7 @@
 <?php
         require_once '../bd/Database.php';
 
-    $query = "SELECT materia, maestro, hora FROM `horarios` WHERE dia = 'domingo' ";
+    $query = "SELECT materia, maestro, hora FROM `hora` ";
 
     $conn = Database::getConnection();
     $stmt = $conn->prepare($query);
@@ -61,15 +61,15 @@
 
         <div class="text-horarios">
 
-        <button id="btn-dom">Domingo</button>
-        <button id="btn-mir">Miércoles</button>
+        <button id="btn-dom" class="btn-horario">Domingo</button>
+        <button id="btn-mir" class="btn-horario">Miércoles</button>
     </div>
 
     <div class="container">
         <?php
         $dias = ['domingo', 'miercoles'];
         foreach ($dias as $dia) {
-            $query = "SELECT materia, maestro, hora FROM `horarios` WHERE dia = ?";
+            $query = "SELECT materia, maestro, hora FROM `hora` WHERE dia = ?";
             $stmt = $conn->prepare($query);
             $stmt->bind_param("s", $dia);
             $stmt->execute();
@@ -86,7 +86,7 @@
                     <?php
                 }
             } else {
-                echo "<p>No hay registros disponibles para el día $dia.</p>";
+                echo "<p>.</p>";
             }
         }
         ?>

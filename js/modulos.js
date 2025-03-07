@@ -6,8 +6,14 @@ function actualizarMaterias(dia) {
     cards.forEach(card => {
         if (card.id === dia) {
             card.style.display = "block";
+            setTimeout(() => {
+                card.classList.add("flip");
+            }, 10);
         } else {
-            card.style.display = "none";
+            card.classList.remove("flip");
+            setTimeout(() => {
+                card.style.display = "none";
+            }, 500);
         }
     });
 

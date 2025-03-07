@@ -1,13 +1,13 @@
 <?php
-require_once '../bd/Database.php';
+        require_once '../bd/Database.php';
 
-$query = "SELECT materia, maestro, hora FROM horarios";
+    $query = "SELECT materia, maestro, hora FROM `horarios` WHERE dia = 'domingo' ";
 
-$conn = Database::getConnection();
-$stmt = $conn->prepare($query);
-$stmt->execute();
-$result = $stmt->get_result();
-?>
+    $conn = Database::getConnection();
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    $result = $stmt->get_result();
+        ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -60,30 +60,38 @@ $result = $stmt->get_result();
         <h1> HORARIOS PRINCIPALES </h1>
 
         <div class="text-horarios">
-        <button class="btn-horario active" id="btn-dom">DOMINGOS</button>
-        <button class="btn-horario" id="btn-mir">MIÉRCOLES</button>
-        </div>
 
+        <button id="btn-dom">Domingo</button>
+        <button id="btn-mir">Miércoles</button>
+    </div>
+
+    <div class="container">
         <?php
-  if ($result->num_rows > 0) {
-      while ($data = $result->fetch_assoc()) {
-          ?>
+        $dias = ['domingo', 'miercoles'];
+        foreach ($dias as $dia) {
+            $query = "SELECT materia, maestro, hora FROM `horarios` WHERE dia = ?";
+            $stmt = $conn->prepare($query);
+            $stmt->bind_param("s", $dia);
+            $stmt->execute();
+            $result = $stmt->get_result();
 
-        <div class="container">
-            <div class="card">
-                <p class="materia"><?php echo htmlspecialchars($data['materia'] ?? 'no disponible'); ?></p>
-                <p class="profesor"><?php echo htmlspecialchars($data['maestro'] ?? 'no disponible'); ?></p>
-                <p class="horario"><?php echo htmlspecialchars($data['hora'] ?? 'no disponible'); ?></p>
-            </div>
-        </div>
+            if ($result->num_rows > 0) {
+                while ($data = $result->fetch_assoc()) {
+                    ?>
+                    <div class="card" id="<?php echo $dia; ?>">
+                        <p class="materia"><?php echo htmlspecialchars($data['materia'] ?? 'no disponible'); ?></p>
+                        <p class="profesor"><?php echo htmlspecialchars($data['maestro'] ?? 'no disponible'); ?></p>
+                        <p class="horario"><?php echo htmlspecialchars($data['hora'] ?? 'no disponible'); ?></p>
+                    </div>
+                    <?php
+                }
+            } else {
+                echo "<p>No hay registros disponibles para el día $dia.</p>";
+            }
+        }
+        ?>
     </div>
     </div>
-    <?php
-      }
-  } else {
-      echo "<p>No hay registros disponibles.</p>";
-  }
-  ?>
 
     <script src="../js/modulos.js"></script>
     <script src="../js/load.js"></script>

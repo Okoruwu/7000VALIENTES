@@ -35,21 +35,33 @@
 
   
   @media (max-width: 768px) {
-    .con-curve {
-        transform: scaleX(1); 
+    .con-curve1{
+      transform: translateY(-18vh);
+    }
+
+    .con-curve2{
+      transform: translateY(18vh);
     }
      }
 
      @media (max-width: 480px) {
-      .con-curve {
-          transform: scaleX(1); 
+      .con-curve1 {
+        transform: translateY(-10vh);
         }
+
+        .con-curve2{
+          transform: translateY(37vh);
+        }  
       
     }
     
-    @media (max-width: 400px) {
-      .con-curve {
-          transform: scaleX(1); 
+  /*  @media (max-width: 1000px) {
+      .con-curve1 {
+        transform: translateY(-29vh); 
+      }
+
+      .con-curve2{
+        transform: translateY(25vh);
       }
     }
     
@@ -65,3 +77,4 @@
         width: 30vh;
       }
     }
+

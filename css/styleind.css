@@ -129,27 +129,50 @@ h1 {
   }
 
   .text-overlay h2 {
-    font-size: 4vw;
+    font-size: 5vw;
     margin: 0;
+  }
+
+  .container{
+    transform: none;
+  }
+
+  .cardback-seg{
+    transform: translateY(75vh);
+    margin-bottom: 80vh;
   }
 
    }
 
    @media (max-width: 480px) {
     .text-overlay h1 {
-      font-size: 4vw;
+      font-size: 7vw;
       margin: 0;
     }
 
     .text-overlay h2 {
-      font-size: 4vw;
-      margin: 0;
+      font-size: 7vw;
+      margin-right: 16vh;
+    }
+
+    .container{
+      transform: translateY(7vh);
+    }
+  
+    .cardback-seg{
+      transform: translateY(100vh);
+      margin-bottom: 105vh;
+    }
+
+    .fon-test{
+      height: 76vh;
+      transform: translateY(5vh);
     }
   
     
   }
   
-  @media (max-width: 400px) {
+ /* @media (max-width: 1000px) {
 
     .text-overlay h1 {
       font-size: 4vw;
@@ -159,45 +182,22 @@ h1 {
     .text-overlay h2 {
       font-size: 4vw;
       margin: 0;
+    }
+
+    .container{
+      transform: translateY(-15vh);
+    }
+  
+    .cardback-seg{
+      transform: translateY(100vh);
+      margin-bottom: 105vh;
+    }
+
+    .fon-test{
+      height: 80vh;
+      transform: translateY(5vh);
     }
   
   }
   
 
-  @media (max-width: 1400px) {
-
-    .text-overlay h1 {
-      font-size: 7vw;
-      margin: 0;
-      margin-top: -16vh;
-
-    }
-
-    .text-overlay h2 {
-      font-size: 7vw;
-      margin: 0;
-      margin-right: 17vh;
-    }
-  
-          
-     }
-
-     @media only screen and (max-width: 1080px) and (max-height: 2400px) {
-
-     .text-overlay h1 {
-      font-size: 7vw;
-      margin: 0;
-      margin-top: -16vh;
-
-    }
-
-    .text-overlay h2 {
-      font-size: 7vw;
-      margin: 0;
-      margin-right: 17vh;
-    }
-
-
-  
- 
-     }

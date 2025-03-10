@@ -10,8 +10,6 @@ function agregarUsuario($nombre, $email, $password, $rol)
     $email = strtolower(trim($email)); // Normalizar el correo
     $stmt->bind_param("ssss", $nombre, $email, $passwordHash, $rol);
     $result = $stmt->execute();
-
-    return $result ? 'success' : 'error';
 }
 
 function eliminarUsuario($usuario_id)
@@ -21,7 +19,6 @@ function eliminarUsuario($usuario_id)
     $stmt->bind_param("i", $usuario_id);
     $result = $stmt->execute();
 
-    return $result ? 'success' : 'error';
 }
 
 function agregarEvento($titulo, $descripcion, $fecha_evento, $imagen_url = null)
@@ -38,8 +35,6 @@ function agregarEvento($titulo, $descripcion, $fecha_evento, $imagen_url = null)
 
     $stmt->bind_param("ssss", $titulo, $descripcion, $fecha_evento, $imagen_url);
     $result = $stmt->execute();
-
-    return $result ? 'success' : 'error';
 }
 
 function eliminarEvento($evento_id)
@@ -49,7 +44,6 @@ function eliminarEvento($evento_id)
     $stmt->bind_param("i", $evento_id);
     $result = $stmt->execute();
 
-    return $result ? 'success' : 'error';
 }
 
 function obtenerEventosPorFecha($fecha)
@@ -66,6 +60,43 @@ function obtenerEventosPorFecha($fecha)
     }
 
     return $eventos;
+}
+
+function AgregarClase($day, $Nclase, $prof, $hora)
+{
+    {
+        $conn = Database::getConnection();
+        if (!$conn) {
+            die("Error de conexión a la base de datos");
+        }
+    
+        $stmt = $conn->prepare("INSERT INTO hora (dia, materia, maestro, hora) VALUES (?, ?, ?, ?)");
+        if (!$stmt) {
+            die("Error en la preparación de la consulta: " . $conn->error);
+        }
+    
+        $stmt->bind_param("ssss", $day, $Nclase, $prof, $hora);
+        $result = $stmt->execute();
+    
+    }
+}
+
+function eliminarClase($Cname)
+{
+    $conn = Database::getConnection();
+    $stmt = $conn->prepare("DELETE FROM hora WHERE materia = ?");
+    $stmt->bind_param("s", $Cname);
+    $result = $stmt->execute();
+
+}
+
+function updateClase($idmatant, $Upmateria, $Uhora)
+{
+    $conn = Database::getConnection();
+    $stmt = $conn->prepare("UPDATE hora SET materia = ?, hora = ? WHERE materia = ?");
+    $stmt->bind_param("sss", $Upmateria, $Uhora, $idmatant);
+    $result = $stmt->execute();
+
 }
 
 function verificarLogin($email, $password)

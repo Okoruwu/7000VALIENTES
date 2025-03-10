@@ -98,13 +98,22 @@ h2 {
 }
 
 
-form {
+.form-user {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 400px;
     margin-top: 20px;
 }
+
+.form-event {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    margin-top: 20px;
+}
+
 
 
 input[type="text"],

@@ -33,6 +33,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             : '<script>Swal.fire("Error", "Hubo un error al eliminar el evento.", "error");</script>';
     }
 }
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['submit_class'])) {
+        $day = $_POST['day'];
+        $Nclase = $_POST['class_name'];
+        $prof = $_POST['name_profesor'];
+        $hora = $_POST['class_hour'];
+                echo AgregarClase($day, $Nclase, $prof, $hora);
+                }
+
+    if (isset($_POST['delete_class'])) {
+        $Cname = $_POST['Cname_id'];
+        $result = eliminarClase($Cname);
+        echo $result ? '<script>Swal.fire("Usuario Eliminado", "El usuario ha sido eliminado exitosamente.", "success");</script>'
+            : '<script>Swal.fire("Error", "Hubo un error al eliminar el usuario.", "error");</script>';
+    }
+
+    if (isset($_POST['update_class'])) {
+        $idmatant = $_POST['ant_mat'];
+        $Upmateria = $_POST['mat_act'];
+        $Uhora = $_POST['hora_act'];
+        echo updateClase( $idmatant, $Upmateria, $Uhora);
+    }
+}
 ?>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -70,6 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <ul class="sidebar-menu">
                     <li><a href="javascript:void(0)" onclick="showSection('users')">Usuarios</a></li>
                     <li><a href="javascript:void(0)" onclick="showSection('events')">Eventos</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('class-card')">Clases</a></li>                    
                     <li><a href="#">Cerrar Sesión</a></li>
                 </ul>
             </nav>
@@ -85,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             <section class="content-section" id="users" style="display:none;">
                 <h3>Agregar Usuario</h3>
-                <form method="POST">
+                <form method="POST" class="form-user">
                     <label>Nombre de Usuario:</label>
                     <input type="text" name="username" required>
                     <label>Correo Electrónico:</label>
@@ -93,41 +118,77 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <label>Contraseña:</label>
                     <input type="password" name="password" required>
                     <label>Rol:</label>
-                    <select name="rol" required>
+                    <select name="rol" required class="roles">
                         <option value="admin">Administrador</option>
                         <option value="editor">Editor</option>
                         <option value="usuario">Usuario</option>
                     </select>
-                    <button type="submit" name="submit_user">Agregar Usuario</button>
+                    <button type="submit" name="submit_user" class="btn-send">Agregar Usuario</button>
                 </form>
                 <h3>Eliminar Usuario</h3>
-                <form method="POST">
+                <form method="POST" class="form-user">
                     <label>ID del Usuario:</label>
                     <input type="text" name="user_id" required>
-                    <button type="submit" name="delete_user">Eliminar Usuario</button>
+                    <button type="submit" name="delete_user" class="btn-delete">Eliminar Usuario</button>
                 </form>
             </section>
 
             <section class="content-section" id="events" style="display:none;">
                 <h3>Agregar Evento</h3>
-                <form method="POST" enctype="multipart/form-data">
+                <form method="POST" enctype="multipart/form-data" class="form-event">
                     <label>Nombre del Evento:</label>
                     <input type="text" name="event_name" required>
                     <label>Descripción:</label>
                     <textarea name="event_description" required></textarea>
                     <label>Fecha del Evento:</label>
-                    <input type="datetime-local" name="event_date" required>
+                    <input type="datetime-local" name="event_date" class="fecha" required>
                     <label>Imagen del Evento:</label>
                     <input type="file" name="event_image" accept="image/*">
-                    <button type="submit" name="submit_event">Agregar Evento</button>
+                    <button type="submit" name="submit_event" class="btn-send">Agregar Evento</button>
                 </form>
                 <h3>Eliminar Evento</h3>
-                <form method="POST">
+                <form method="POST" class="form-event">
                     <label>ID del Evento:</label>
                     <input type="text" name="event_id" required>
-                    <button type="submit" name="delete_event">Eliminar Evento</button>
+                    <button type="submit" name="delete_event" class="btn-delete">Eliminar Evento</button>
                 </form>
             </section>
+
+            <section class="content-section" id="class-card" style="display:none;">
+                <h3>Agregar | Actualizar Clase</h3>
+                <form method="POST" enctype="multipart/form-data" class="form-event">
+                    <label>Dia de la clase:</label>
+                    <select name="day" required class="roles">
+                        <option value="miercoles">Miercoles</option>
+                        <option value="domingo">Domingo</option>
+                    </select>                    
+                    <label>Nombre de la clase:</label>
+                    <input type="text" name="class_name" required>
+                    <label>Nombre del profesor:</label>
+                    <input type="text" name="name_profesor" required></input>
+                    <label>Hora de clase:</label>
+                    <input type="text" name="class_hour" required>
+                    <button type="submit" name="submit_class" class="btn-send">Agregar Clase</button>
+                </form>
+                <h3>Eliminar Clase</h3>
+                <form method="POST" class="form-event">
+                    <label>Nombre de la clase:</label>
+                    <input type="text" name="Cname_id" required>
+                    <button type="submit" name="delete_class" class="btn-delete">Eliminar Clase</button>
+                </form>
+
+                <h3>Actualizar Clase</h3>
+                <form method="POST" class="form-event">
+                    <label>Nombre de la clase para actualizar:</label>
+                    <input type="text" name="ant_mat" required>
+                    <label>Nombre de la clase:</label>
+                    <input type="text" name="mat_act" required>
+                    <label>Hora de la clase:</label>
+                    <input type="text" name="hora_act" required>                                        
+                    <button type="submit" name="update_class" class="btn-send">Actualizar Clase</button>
+                </form>
+            </section>
+
         </div>
     </div>
 

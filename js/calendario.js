@@ -27,24 +27,25 @@ document.addEventListener("DOMContentLoaded", function () {
             let formattedDate = `${year}-${month.toString().padStart(2, "0")}-${selectedDay.padStart(2, "0")}`;
 
             fetch(`calendario.php?fecha=${formattedDate}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error("Error en la respuesta del servidor");
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (data.length > 0) {
-                        let evento = data[0];
-                        info.innerHTML = `
-                            
-                            ${evento.imagen_url ? `<img src="${evento.imagen_url}" alt="Imagen del evento" />` : ''}
-                        `;
-                    } else {
-                        info.innerHTML = `<p>No hay eventos para esta fecha.</p>`;
-                    }
-                })
-                .catch(error => console.error("Error al obtener el evento:", error));
+            .then(response => response.json())
+            .then(data => {
+                console.log("Datos recibidos:", data); 
+        
+                if (data.length > 0) {
+                    let evento = data[0];
+                    let imagenUrl = evento.imagen_url.includes("7000VALIENTES/")
+
+
+                    console.log("Ruta de la imagen:", imagenUrl); 
+        
+                    info.innerHTML = `
+                        ${evento.imagen_url ? <img src="${imagenUrl}" alt="Imagen del evento" /> : '<p>Sin imagen disponible.</p>'}
+                    `;
+                } else {
+                    info.innerHTML = <p>No hay eventos para esta fecha.</p>;
+                }
+            })
+            .catch(error => console.error("Error al obtener el evento:", error));
         }
     });
 

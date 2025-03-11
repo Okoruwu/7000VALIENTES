@@ -7,15 +7,17 @@ if (isset($_GET['fecha'])) {
 
     $eventos = obtenerEventosPorFecha($fecha);
 
-    // Agrega una comprobación si no hay eventos o si hay un error
-    if (!$eventos) {
-        echo json_encode(["error" => "Error al obtener eventos"]);
-    } elseif (empty($eventos)) {
-        echo json_encode(["message" => "No hay eventos para esta fecha"]);
-    } else {
-        echo json_encode($eventos);
+    foreach ($eventos as &$evento) {
+        if (!empty($evento['imagen_url'])) {
+        
+            if (strpos($evento['imagen_url'], "7000VALIENTES/") === false) {
+                $evento['imagen_url'] = "/7000VALIENTES/" . ltrim($evento['imagen_url'], "/");
+            }
+        }
     }
-    exit; // DETENER EJECUCIÓN
+
+    echo json_encode($eventos);
+    exit;
 }
 
 include_once '../modulos/nav.php';

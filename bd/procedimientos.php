@@ -35,7 +35,14 @@ function agregarEvento($titulo, $descripcion, $fecha_evento, $imagen_url = null)
 
     $stmt->bind_param("ssss", $titulo, $descripcion, $fecha_evento, $imagen_url);
     $result = $stmt->execute();
+
+    if ($result) {
+        return "Evento guardado correctamente.";
+    } else {
+        return "Error al guardar el evento: " . $stmt->error;
+    }
 }
+
 
 function eliminarEvento($evento_id)
 {

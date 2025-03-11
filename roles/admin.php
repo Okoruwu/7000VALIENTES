@@ -22,7 +22,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $titulo = $_POST['event_name'];
         $descripcion = $_POST['event_description'];
         $fecha_evento = $_POST['event_date'];
-        $imagen = isset($_FILES['event_image']) && $_FILES['event_image']['error'] === 0 ? $_FILES['event_image']['name'] : null;
+        $imagen = null; 
+    
+        if (isset($_FILES['event_image']) && $_FILES['event_image']['error'] === 0) {
+            $directorioDestino = "../uploads/"; 
+            $nombreArchivo = basename($_FILES['event_image']['name']);
+            $rutaCompleta = $directorioDestino . $nombreArchivo;
+    
+            // Intentar mover el archivo
+            if (move_uploaded_file($_FILES['event_image']['tmp_name'], $rutaCompleta)) {
+                $imagen = "uploads/" . $nombreArchivo; 
+            } else {
+                die("Error al subir la imagen.");
+            }
+        }
+    
         echo agregarEvento($titulo, $descripcion, $fecha_evento, $imagen);
     }
 

@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log("Ruta de la imagen:", imagenUrl); 
         
                     info.innerHTML = `
-                        ${evento.imagen_url ? <img src="${imagenUrl}" alt="Imagen del evento" /> : '<p>Sin imagen disponible.</p>'}
+                        ${evento.imagen_url ? `<img src="${imagenUrl}" alt="Imagen del evento" />` : '<p>Sin imagen disponible.</p>'}
                     `;
                 } else {
                     info.innerHTML = <p>No hay eventos para esta fecha.</p>;

@@ -13,14 +13,14 @@
 
 .con-curve1 {
   opacity: 100%;
-  transform: translateY(-33vh);
+  transform: translateY(-25vh) scaleY(-1);
   overflow: hidden;
   margin-bottom: -33vh;
 }
 
 .con-curve2 {
   opacity: 100%;
-  transform: translateY(-8vh);
+  transform: translateY(-8vh) scaleY(-1);
   overflow: hidden;
   margin-bottom: -75vh; 
 }
@@ -34,13 +34,13 @@
 
 
   
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .con-curve1{
-      transform: translateY(-18vh);
+      transform: translateY(-7vh) scaleY(-1);
     }
 
     .con-curve2{
-      transform: translateY(18vh);
+      transform: translateY(18vh) scaleY(-1);
     }
      }
 
@@ -55,6 +55,27 @@
       
     }
     
+    @media (max-width: 650px) {
+      .con-curve1{
+        transform: translateY(-3vh) scaleY(-1);
+      }
+  
+      .con-curve2{
+        transform: translateY(27vh) scaleY(-1);
+      }
+       }
+  
+       @media (max-width: 480px) {
+        .con-curve1 {
+          transform: translateY(-14vh) scaleY(-1);
+          }
+  
+          .con-curve2{
+            transform: translateY(10vh) scaleY(-1);
+          }  
+        
+      }
+
   /*  @media (max-width: 1000px) {
       .con-curve1 {
         transform: translateY(-29vh); 

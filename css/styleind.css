@@ -117,12 +117,12 @@ h1 {
 }
 
 .cardback-seg {
-  transform: translateY(60vh);
+  transform: translateY(50vh);
   margin-bottom: 65vh;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .text-overlay h1 {
     font-size: 5vw;
     margin: 0;
@@ -137,10 +137,10 @@ h1 {
     transform: none;
   }
 
-  .cardback-seg{
-    transform: translateY(75vh);
-    margin-bottom: 80vh;
-  }
+  .cardback-seg {
+    transform: translateY(45vh);
+    margin-bottom: 55vh;
+}
 
    }
 
@@ -156,19 +156,19 @@ h1 {
     }
 
     .container{
-      transform: translateY(7vh);
+      transform: translateY(0vh);
     }
   
     .cardback-seg{
-      transform: translateY(100vh);
-      margin-bottom: 105vh;
+      transform: translateY(50vh);
+      margin-bottom: 55vh;
     }
 
     .fon-test{
       height: 76vh;
       transform: translateY(5vh);
     }
-  
+
     
   }
   

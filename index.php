@@ -50,10 +50,9 @@ $result = $stmt->get_result();
 
       <h2>VIDAS</h2>
     </div>
+    <div class="con-curve1">
+    <img src="./resources/cur-azul2.svg" alt="curva" class="img-curve"> 
   </div>
-
-  <div class="con-curve1">
-    <img src="./resources/curva.png" alt="curva" class="img-curve">
   </div>
 
     <h3 class="quien">¿Quiénes somos?</h3>
@@ -99,17 +98,17 @@ $result = $stmt->get_result();
   ?>
 </div>
 
-  </div>     
+<div class="con-curve2">
+  <img src="./resources/cur-azul2.svg" alt="curva" class="img-curve"> 
+  </div>  
 
-  <div class="con-curve2">
-    <img src="./resources/curva.png" alt="curva" class="img-curve">
-  </div>
+  </div>     
 
   <h3 class="test-ti">Escribe tu testimonio</h3>
 
   <div class="cardback-seg">
-
-    <div class="testimonio-form">
+  
+  <div class="testimonio-form">
 
       <p class="p-white"> Contemos las historias que inspiren a otras personas seguir creyendo por su milagro.
         Tu testimonio las pueden llenar de fe, compartelo.</p>

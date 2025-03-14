@@ -66,6 +66,16 @@
     }
      }
 
+     @media (max-width: 1300px){
+
+      .con-curve1{
+        transform: translateY(-34vh) scaleY(-1);
+      }
+
+      .con-curve2{
+        transform: translateY(35vh) scaleY(-1);
+      }
+  }
 
     
 

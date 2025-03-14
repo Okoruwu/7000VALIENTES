@@ -261,3 +261,28 @@
     }
 
      }
+
+     @media (max-width: 1300px){
+
+        .quien{
+            transform: translateY(3vh);
+            font-size: 4.8em;
+            margin-right: 0vh;
+        }
+    
+        .test{
+            margin-left: 0%;
+        }
+    
+        .carousel{
+            width: 85%;
+            left: 10vh;
+            transform: translateY(25vh);
+        }
+    
+        .test-ti {
+            font-size: 4.8em;
+            margin-right: 3vh;
+            transform: translateY(40vh);
+        }
+    }

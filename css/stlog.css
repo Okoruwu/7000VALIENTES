@@ -227,11 +227,47 @@ h1{
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px){
 
-   }
+  .login-form {
+    padding: 15px;
+    transform: translateY(2vh);
+    width: auto;
+    height: 90vh;
+  }
 
-  @media (max-width: 1400px) {
+  .login-form input[type="text"],
+  .login-form input[type="email"],
+  .login-form textarea {
+      font-size: 14px;
+      transform: translate(6vh, -35vh);
+      width: 45vh;
+  }
 
-          
-     }
+  .login-form button {
+      font-size: 20px;
+      transform: translateY(-44vh);
+  }
+
+.btn-send{
+        transform: translateY(13vh);
+}
+
+.con-nub{
+  transform: translate(55vh, -26vh);
+}
+
+  h1{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 75px;
+    transform: translate(1vh, -36vh);
+      
+  }
+
+  .p-white{
+    transform: translate(10px, -26vh);
+    font-size: 3vh;
+  }
+
+}

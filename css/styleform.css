@@ -272,11 +272,14 @@
     
         .test{
             margin-left: 0%;
+            text-align: center;
+            font-size: 8.8em;
+            transform: translateY(15vh);
         }
     
         .carousel{
             width: 85%;
-            left: 10vh;
+            left: 11vh;
             transform: translateY(25vh);
         }
     

@@ -148,6 +148,34 @@ h1 {
   height: 80px;
 }
 
+
+@media (max-width: 400px) {
+  .login-form {
+    padding: 15px;
+}
+
+.login-form h2 {
+    font-size: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form textarea {
+    font-size: 14px;
+}
+
+.login-form button {
+    font-size: 14px;
+}
+h1{
+    text-align: center;
+    font-size: 3.8em;
+    margin-top: 75px;
+    
+}
+}
+
+
 @media (max-width: 600px) {
   .login-form {
     padding: 15px;
@@ -202,34 +230,6 @@ h1 {
 @media (max-width: 768px) {
 
    }
-
-  
-  @media (max-width: 400px) {
-    .login-form {
-      padding: 15px;
-  }
-
-  .login-form h2 {
-      font-size: 20px;
-  }
-
-  .login-form input[type="text"],
-  .login-form input[type="email"],
-  .login-form textarea {
-      font-size: 14px;
-  }
-
-  .login-form button {
-      font-size: 14px;
-  }
-  h1{
-      text-align: center;
-      font-size: 3.8em;
-      margin-top: 75px;
-      
-  }
-  }
-  
 
   @media (max-width: 1400px) {
 

@@ -151,6 +151,37 @@
     margin-right: 5vh;
     transform: translateY(42vh);
 }
+
+@media (max-width: 480px) {
+    h3{
+        text-align: center;
+        font-size: 3.8em;
+        margin-top: 75px;
+        
+    }
+
+    .quien{
+        transform: translateY(-2vh);
+        font-size: 2.8em;
+    }
+
+    .test{
+        margin-left: 0%;
+    }
+
+    .carousel{
+        width: 85%;
+        left: 4vh;
+        transform: translateY(12vh);
+    }
+
+    .test-ti{
+        font-size: 2.8em;
+        transform: translateY(45vh);
+    }
+  
+}
+
   
   @media (max-width: 650px) {
     .testimonio-form {
@@ -230,67 +261,3 @@
     }
 
      }
-
-     @media (max-width: 480px) {
-        h3{
-            text-align: center;
-            font-size: 3.8em;
-            margin-top: 75px;
-            
-        }
-
-        .quien{
-            transform: translateY(-2vh);
-            font-size: 2.8em;
-        }
-    
-        .test{
-            margin-left: 0%;
-        }
-    
-        .carousel{
-            width: 85%;
-            left: 4vh;
-            transform: translateY(12vh);
-        }
-    
-        .test-ti{
-            font-size: 2.8em;
-            transform: translateY(45vh);
-        }
-      
-    }
-    
-   /* @media (max-width: 1000px) {
-        h3{
-            text-align: center;
-            font-size: 3.8em;
-            margin-top: 75px;
-        }
-
-        .quien{
-            transform: translateY(-17vh);
-            font-size: 4.8em;
-            margin-right: 0vh;
-        }
-    
-        .test{
-            margin-left: 0%;
-            transform: translateY(-16vh);
-        }
-    
-        .carousel{
-            width: 85%;
-            left: 9vh;
-            transform: translateY(-15vh);
-        }
-    
-        .test-ti{
-            font-size: 4.8em;
-            margin-right: 3vh;
-            transform: translateY(96vh);
-        }
-    }
-    
-
- 

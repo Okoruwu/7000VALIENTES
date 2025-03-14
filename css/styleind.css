@@ -122,6 +122,35 @@ h1 {
 }
 
 
+@media (max-width: 480px) {
+  .text-overlay h1 {
+    font-size: 7vw;
+    margin: 0;
+  }
+
+  .text-overlay h2 {
+    font-size: 7vw;
+    margin-right: 16vh;
+  }
+
+  .container{
+    transform: translateY(0vh);
+  }
+
+  .cardback-seg{
+    transform: translateY(50vh);
+    margin-bottom: 55vh;
+  }
+
+  .fon-test{
+    height: 76vh;
+    transform: translateY(5vh);
+  }
+
+  
+}
+
+
 @media (max-width: 650px) {
   .text-overlay h1 {
     font-size: 5vw;
@@ -144,60 +173,4 @@ h1 {
 
    }
 
-   @media (max-width: 480px) {
-    .text-overlay h1 {
-      font-size: 7vw;
-      margin: 0;
-    }
-
-    .text-overlay h2 {
-      font-size: 7vw;
-      margin-right: 16vh;
-    }
-
-    .container{
-      transform: translateY(0vh);
-    }
-  
-    .cardback-seg{
-      transform: translateY(50vh);
-      margin-bottom: 55vh;
-    }
-
-    .fon-test{
-      height: 76vh;
-      transform: translateY(5vh);
-    }
-
-    
-  }
-  
- /* @media (max-width: 1000px) {
-
-    .text-overlay h1 {
-      font-size: 4vw;
-      margin: 0;
-    }
-
-    .text-overlay h2 {
-      font-size: 4vw;
-      margin: 0;
-    }
-
-    .container{
-      transform: translateY(-15vh);
-    }
-  
-    .cardback-seg{
-      transform: translateY(100vh);
-      margin-bottom: 105vh;
-    }
-
-    .fon-test{
-      height: 80vh;
-      transform: translateY(5vh);
-    }
-  
-  }
-  
 

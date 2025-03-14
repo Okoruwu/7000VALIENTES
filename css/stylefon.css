@@ -32,6 +32,28 @@
   margin-bottom: -10vh;
 }
 
+@media (max-width: 480px) {
+  .con-curve1 {
+    transform: translateY(-14vh) scaleY(-1);
+    }
+
+    .con-curve2{
+      transform: translateY(10vh) scaleY(-1);
+    }  
+  
+}
+
+
+@media (max-width: 650px) {
+  .con-curve1{
+    transform: translateY(-3vh) scaleY(-1);
+  }
+
+  .con-curve2{
+    transform: translateY(27vh) scaleY(-1);
+  }
+   }
+
 
   
   @media (max-width: 1200px) {
@@ -44,58 +66,7 @@
     }
      }
 
-     @media (max-width: 480px) {
-      .con-curve1 {
-        transform: translateY(-10vh);
-        }
 
-        .con-curve2{
-          transform: translateY(37vh);
-        }  
-      
-    }
     
-    @media (max-width: 650px) {
-      .con-curve1{
-        transform: translateY(-3vh) scaleY(-1);
-      }
-  
-      .con-curve2{
-        transform: translateY(27vh) scaleY(-1);
-      }
-       }
-  
-       @media (max-width: 480px) {
-        .con-curve1 {
-          transform: translateY(-14vh) scaleY(-1);
-          }
-  
-          .con-curve2{
-            transform: translateY(10vh) scaleY(-1);
-          }  
-        
-      }
 
-  /*  @media (max-width: 1000px) {
-      .con-curve1 {
-        transform: translateY(-29vh); 
-      }
-
-      .con-curve2{
-        transform: translateY(25vh);
-      }
-    }
-    
-    @media (max-width: 1000px) {
-      .con-curve {
-          transform: scaleX(1); 
-      }
-    }
-
-    @media (max-width: 320px) {
-    
-      .img-curve {
-        width: 30vh;
-      }
-    }
 

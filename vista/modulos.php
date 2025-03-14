@@ -38,14 +38,12 @@
         <div id="imageCarousel" class="carousel slide w-100" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/1200x400/ff6b6b/ffffff" class="d-block w-100" alt="Imagen 1">
+                    <img src="../carrusel-banners/BANNER.png" class="d-block w-100" alt="Imagen 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x400/feca57/ffffff" class="d-block w-100" alt="Imagen 2">
+                    <img src="../carrusel-banners/banners.png" class="d-block w-100" alt="Imagen 2">
                 </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x400/1dd1a1/ffffff" class="d-block w-100" alt="Imagen 3">
-                </div>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
